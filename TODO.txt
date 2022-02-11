@@ -1,0 +1,32 @@
+RED PLANET CPC
+==============
+
+HECHO
+=====
+
+14/01/22 - spriteset en modo 1
+16/01/22 - fonts en modo 1 (sombra a la derecha)
+15/01/22 - pantalla "TITLE" en modo 1
+16/01/22 - eliminar parte de las decoraciones en scripting
+16/01/22 - modificar mapa para mayor facilidad
+16/01/22 - configurar textos del juego
+17/01/22 - reparar BUG en textos de pantalla (pintar al pintar mapa)
+17/01/22 - marcador de objetos con 00/10
+17/01/22 - limpiar el código del scripting
+18/01/22 - modificar FLAGS desde código
+20/01/22 - iluminación lámpara nivel 1
+23/01/22 - iluminación lámpara nivel 2
+27/01/22 - tileset del nivel inferior
+29/01/22 - cambiar paleta dinámicamente por nº de pantalla
+30/01/22 - reparar BUG en aterrizaje de plataforma
+01/02/22 - BUG al posarse sobre plataforma
+02/02/22 - aminorar velocidad de animación
+
+
+POR HACER
+=========
+
+- pantalla final
+- sonidos FX
+- sonido al poner explosivos
+- música
