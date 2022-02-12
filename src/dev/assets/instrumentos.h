@@ -8,42 +8,45 @@
      
     ; Tabla de instrumentos 
     .TABLA_PAUTAS
-        defw PAUTA_0,PAUTA_1,PAUTA_2,PAUTA_3,PAUTA_4,PAUTA_5 
+        defw PAUTA_0,PAUTA_1,PAUTA_2,PAUTA_3,PAUTA_4,PAUTA_5,PAUTA_6 
      
     ; Tabla de efectos 
     .TABLA_SONIDOS
         defw SONIDO0,SONIDO1,SONIDO2,SONIDO3 
      
     ;Pautas (instrumentos) 
-    ;Instrumento 'Piano' 
+    ;Instrumento 'Bajo' 
     .PAUTA_0
-        defb 47,0,15,0,13,0,11,0,4,0,129 
-    ;Instrumento 'PICC' 
+        defb 46,0,12,0,10,0,9,0,129 
+    ;Instrumento 'triririn' 
     .PAUTA_1
-        defb 76,0,13,0,12,0,11,0,10,0,8,0,7,0,5,0,1,0,129 
-    ;Instrumento 'Flauta vol bajo' 
+        defb 46,0,13,0,12,0,10,0,10,0,9,0,8,0,11,0,10,0,9,0,129 
+    ;Instrumento 'chip1' 
     .PAUTA_2
-        defb 12,0,9,0,7,0,9,0,11,0,9,0,10,0,10,0,8,0,10,0,129 
-    ;Instrumento 'Flauta' 
+        defb 7,0,8,0,9,0,9,0,8,0,7,0,6,0,129 
+    ;Instrumento 'onda1' 
     .PAUTA_3
-        defb 10,0,12,0,13,0,13,0,13,0,12,0,11,0,11,0,11,0,10,0,10,0,10,0,10,0,10,0,9,0,9,0,9,0,9,0,9,0,138 
-    ;Instrumento 'Picc vol 2' 
+        defb 45,0,12,0,12,0,11,0,11,0,10,0,10,0,9,0,129 
+    ;Instrumento 'Onda2' 
     .PAUTA_4
-        defb 71,0,6,0,7,0,6,0,5,0,129 
-    ;Instrumento 'Eco' 
+        defb 7,0,8,0,8,0,8,0,7,0,6,0,6,0,6,0,6,0,6,0,5,0,5,0,5,0,5,0,5,0,138 
+    ;Instrumento 'Chip2' 
     .PAUTA_5
-        defb 6,0,8,0,9,0,8,0,7,0,6,0,129 
+        defb 7,0,8,0,9,0,8,0,7,0,6,0,129 
+    ;Instrumento 'Onda3' 
+    .PAUTA_6
+        defb 77,0,12,0,11,0,10,0,9,0,8,0,7,0,9,0,8,0,7,0,129 
      
     ;Efectos 
     ;Efecto 'bass drum' 
     .SONIDO0
-        defb 209,62,0,186,92,0,255 
+        defb 23,63,0,116,110,0,255 
     ;Efecto 'drum' 
     .SONIDO1
-        defb 139,46,0,232,43,8,255 
+        defb 162,47,0,23,93,9,255 
     ;Efecto 'hithat' 
     .SONIDO2
-        defb 0,11,1,0,6,1,255 
+        defb 0,10,5,255 
     ;Efecto 'bass drum vol 2' 
     .SONIDO3
         defb 186,58,0,0,102,0,162,131,0,255 

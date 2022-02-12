@@ -2,7 +2,7 @@
 // This needs a buffer to decompress songs.
 // Biggest .mus file must fit, so adjust if needed:
 
-#define WYZ_SONG_BUFFER 0x8800
+#define WYZ_SONG_BUFFER 0x8B5C
 #define BASE_WYZ 		0xDF80
 
 void wyz_init (void) {
@@ -276,12 +276,12 @@ void wyz_stop_sound (void) {
 		JP ROUT
 
 	;CARGA UNA CANCION
-	;.IN(A)=Nº DE CANCION
+	;.IN(A)=Nï¿½ DE CANCION
 	.CARGA_CANCION
 		LD HL,INTERR ;CARGA CANCION 
 		SET 1,(HL) ;REPRODUCE CANCION
 		LD HL,SONG
-		LD (HL),A ;Nº A
+		LD (HL),A ;Nï¿½ A
 
 	;DECODIFICAR
 	;IN-> INTERR 0 ON
@@ -329,7 +329,7 @@ void wyz_stop_sound (void) {
 		INC HL
 
 	;BUSCA Y GUARDA INICIO DE LOS CANALES EN EL MODULO MUS (OPTIMIZAR****************)
-	;AÑADE OFFSET DEL LOOP
+	;Aï¿½ADE OFFSET DEL LOOP
 
 		PUSH HL ;IX INICIO OFFSETS LOOP POR CANAL
 		POP IX
@@ -459,7 +459,7 @@ void wyz_stop_sound (void) {
 		LD (DE),A
 		INC HL
 		INC DE
-		LDI ;Nº DE INSTRUMENTO
+		LDI ;Nï¿½ DE INSTRUMENTO
 		; LD A,(HL)
 		; LD (DE),A
 		; INC DE
@@ -601,7 +601,7 @@ void wyz_stop_sound (void) {
 		JR Z,COM_EFECTO
 
 		INC HL
-		LD A,(HL) ;Nº DE PAUTA
+		LD A,(HL) ;Nï¿½ DE PAUTA
 		INC HL
 		LD E,(HL) 
 		
@@ -815,7 +815,7 @@ void wyz_stop_sound (void) {
 		
 		BIT 7,A ;LOOP / EL RESTO DE BITS NO AFECTAN
 		JR Z,PCAJP0
-		AND 00011111B ;MÁXIMO LOOP PAUTA (0,32)X2!!!-> PARA ORNAMENTOS
+		AND 00011111B ;Mï¿½XIMO LOOP PAUTA (0,32)X2!!!-> PARA ORNAMENTOS
 		RLCA ;X2
 		LD D,0
 		LD E,A
@@ -1051,7 +1051,7 @@ void wyz_stop_sound (void) {
 	
 	;MUSICA **** EL ORDEN DE LAS VARIABLES ES FIJO ******
 
-	.SONG 			defb 0	;DBNº DE CANCION
+	.SONG 			defb 0	;DBNï¿½ DE CANCION
 	.TEMPO 			defb 0	;DB TEMPO
 	.TTEMPO 		defb 0	;DB CONTADOR TEMPO
 

@@ -26,6 +26,8 @@ HECHO
 POR HACER
 =========
 
+- tecla MUTE
 - sonidos FX
+
 - sonido al poner explosivos
 - música
