@@ -4,21 +4,21 @@
 
 // custom salva
 
-const unsigned char pal_1 [] = {
+const unsigned char pal_1 [] = { // standard palette
 	0x14, // FF000000	negro
 	0x00, // FF808080	gris
 	0x0C, // FFFF0000	rojo intenso
 	0x0B, // FFFFFFFF	blanco
 };
 
-const unsigned char pal_2 [] = {
+const unsigned char pal_2 [] = { // dark palette
 	0x14, // FF000000	negro
 	0x00, // FF808080	gris
 	0x1C, // FF800000	rojo oscuro
 	0x0B, // FFFFFFFF	blanco
 };
 
-const unsigned char pal_3 [] = {
+const unsigned char pal_3 [] = { // warm palette
 	0x14, // FF000000	negro
 	0x00, // FF808080	gris
 	0x0C, // FFFF0000	rojo intenso

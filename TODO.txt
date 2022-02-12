@@ -26,7 +26,6 @@ HECHO
 POR HACER
 =========
 
-- pantalla final
 - sonidos FX
 - sonido al poner explosivos
 - música
