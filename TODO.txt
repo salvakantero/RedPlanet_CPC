@@ -21,13 +21,11 @@ HECHO
 30/01/22 - reparar BUG en aterrizaje de plataforma
 01/02/22 - BUG al posarse sobre plataforma
 02/02/22 - aminorar velocidad de animación
-
+13/02/22 - tecla MUTE (M)
 
 POR HACER
 =========
 
-- tecla MUTE
 - sonidos FX
-
 - sonido al poner explosivos
 - música

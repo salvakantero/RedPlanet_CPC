@@ -41,7 +41,8 @@
 	#ifdef COMPRESSED_LEVELS		
 		AY_PLAY_MUSIC (levels [level].music_id);
 	#else
-		AY_PLAY_MUSIC (1);
+		if (muted != 1)
+			AY_PLAY_MUSIC (1);
 	#endif		
 
 	#ifdef ACTIVATE_SCRIPTING
@@ -266,6 +267,20 @@
 			}			
 			if (cpc_TestKey (KEY_ESC)) {
 				playing = 0;
+			}
+			// custom salva
+			if (cpc_TestKey (KEY_AUX1)) {
+				while (cpc_TestKey (KEY_AUX1));
+				if (muted)
+				{
+					AY_PLAY_MUSIC (1);
+					muted = 0;
+				}
+				else
+				{
+					AY_PLAY_MUSIC (2); // silence
+					muted = 1;
+				}
 			}
 		#endif
 

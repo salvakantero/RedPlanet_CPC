@@ -143,7 +143,7 @@
 // ---------
 
 #define ACTIVATE_SCRIPTING					// Activates msc scripting and flag related stuff.
-#define MAX_FLAGS 					32
+#define MAX_FLAGS 					8
 #define SCRIPTING_DOWN						// Use DOWN as the action key.
 //#define SCRIPTING_KEY_AUX1				// Use AUX1 as the action key instead.
 //#define SCRIPTING_KEY_FIRE				// User FIRE as the action key instead.
@@ -248,7 +248,7 @@ extern unsigned char def_keys [0];
 		defw $4204		; KEY_ENTER
 		defw $4804		; KEY_ESC	
 
-		defw $4880		; KEY_AUX1 Z
+		defw $4440		;$4880		; KEY_AUX1 Z //custom salva (M)
 		defw $4780 		; KEY_AUX2 X
 		defw $4801 		; KEY_AUX3 1
 		defw $4802 		; KEY_AUX4 2

@@ -7,9 +7,7 @@
 void main (void) {
 
 	// CPC initialization
-	
 	AY_INIT ();
-
 	#asm
 		di
 
@@ -70,7 +68,6 @@ void main (void) {
 	#endasm
 	
 	// Border 0
-
 	#asm
 		ld 	a, 0x54
 		ld  bc, 0x7F11
@@ -79,7 +76,6 @@ void main (void) {
 	#endasm
 
 	// Decompress LUT in place
-
 	unpack ((unsigned int) (trpixlutc), BASE_LUT);
 
 	blackout ();
@@ -88,7 +84,6 @@ void main (void) {
 	pal_set (pal_1);
 	
 	// Set mode
-
 	cpc_SetMode (CPC_GFX_MODE);
 
 	// Set tweaked mode 
@@ -123,7 +118,6 @@ void main (void) {
 	// Sprite creation
 
 	// Player 
-
 	sp_sw [SP_PLAYER].cox = sm_cox [0];
 	sp_sw [SP_PLAYER].coy = sm_coy [0];
 	sp_sw [SP_PLAYER].invfunc = sm_invfunc [0];
@@ -131,14 +125,12 @@ void main (void) {
 	sp_sw [SP_PLAYER].sp0 = sp_sw [SP_PLAYER].sp1 = (unsigned int) (sm_sprptr [0]);
 
 	// Enemies 
-
 	for (gpit = SP_ENEMS_BASE; gpit < SP_ENEMS_BASE + MAX_ENEMS; gpit ++) {
 		sp_sw [gpit].invfunc = cpc_PutSpTileMap4x8;
 		sp_sw [gpit].updfunc = cpc_PutTrSp4x8TileMap2b;
 	}
 
 	// Bullets are 4x8
-
 	#ifdef PLAYER_CAN_FIRE
 		for (gpit = SP_BULLETS_BASE; gpit < SP_BULLETS_BASE + MAX_BULLETS; gpit ++) {
 			sp_sw [gpit].cox = 0;
@@ -150,7 +142,6 @@ void main (void) {
 	#endif
 
 	// Cocos are 4x8
-
 	#ifdef ENABLE_SIMPLE_COCOS
 		for (gpit = SP_COCOS_BASE; gpit < SP_COCOS_BASE + MAX_ENEMS; gpit ++) {
 			sp_sw [gpit].cox = 0;

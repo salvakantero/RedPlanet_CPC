@@ -172,8 +172,8 @@ unsigned char *_baddies_pointer;
 #endif
 
 
-// atributos de la pantalla: Contiene información
-// sobre qué tipo de tile hay en cada casilla
+// atributos de la pantalla: Contiene informaciï¿½n
+// sobre quï¿½ tipo de tile hay en cada casilla
 unsigned char map_attr [150]					@ BASE_ROOM_BUFFERS;
 unsigned char map_buff [150]					@ BASE_ROOM_BUFFERS + 150;
 // Breakable walls/etc
@@ -181,12 +181,12 @@ unsigned char map_buff [150]					@ BASE_ROOM_BUFFERS + 150;
 	unsigned char brk_buff [150] 				@ BASE_ROOM_BUFFERS + 300;
 #endif
 
-// posición del objeto (hotspot). Para no objeto,
-// se colocan a 240,240, que está siempre fuera de pantalla.
+// posiciï¿½n del objeto (hotspot). Para no objeto,
+// se colocan a 240,240, que estï¿½ siempre fuera de pantalla.
 unsigned char hotspot_x;
 unsigned char hotspot_y;
 unsigned char hotspot_destroy;
-unsigned char orig_tile;	// Tile que había originalmente bajo el objeto
+unsigned char orig_tile;	// Tile que habï¿½a originalmente bajo el objeto
 
 // Flags para scripting
 #ifndef MAX_FLAGS
@@ -321,3 +321,4 @@ unsigned char isr_player_on;
 
 // custom salva
 unsigned char last_pal = 1;
+unsigned char muted = 0;
