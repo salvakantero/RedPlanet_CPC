@@ -1,20 +1,77 @@
-# MK1_Pestecera
 
-MK1 for Pestecé
+==========
+RED PLANET
+==========
 
-**NOT READY YET**...
+Amstrad CPC 464 - © salvaKantero 2015/22
 
-## Credits
+Conduce a nuestro héroe al subsuelo de la antigua
+estación espacial para volar todo el complejo y acabar
+con sus malignos habitantes. Pero cuidado, el entorno
+es peligroso. Evita entrar en contacto con los enemigos, 
+y caer en los pozos de lava o de residuos radiactivos.
 
-Give credit where credit is due:
+Para acabar con éxito la misión debes obtener los 10
+explosivos que hay repartidos por la estación, y
+situarlos en el depósito de explosivos, en lo más
+profundo de la base marciana. Una vez depositados, tienes 
+que regresar al centro de control y activar el detonador.
 
-* Backend based on a modified **CPCRSLIB**, originally written by **Artaburu**
-* **Appack decompressor** by **dwedit**, adapted by **Utopian**, optimized by **Metalbrain**.
-* **Aplib compressor [apultra](https://github.com/emmanuel-marty/apultra)** by **Emmanuel Marty**.
-* **WYZ Player** by **WYZ**, adapted by **Augusto Ruiz**, integrated by **na_th_an**.
-* **WYZ Tracker 2** by **Augusto Ruiz** - [link](https://github.com/AugustoRuiz/WYZTracker).
-* **TinyTape** by **CNGsoft**.
-* **cpctbin2sna** and **cpc2cdt** from [CPCtelera](http://lronaldo.github.io/cpctelera/) by **Fran Gallego** & others.
-* **ZX7** by **Einar Saukas**.
+En ocasiones tendrás que acceder a zonas cerradas con
+tarjeta de acceso, por lo que previamente deberás
+localizar estas tarjetas para continuar tu misión.
 
-Did I forget you? Open an issue!
+Tienes la posibilidad de disparar balas de plasma
+contra tus enemigos, pero cuidado, no malgastes
+munición, ya que ésta es escasa. Hay recargas
+repartidas por todo el complejo. Reserva algo de munición
+para la vuelta.
+
+El oxígeno disponible es muy escaso. Vigila el estado de
+tus botellas de oxígeno y busca otras nuevas antes de
+que se agoten o morirás en el acto. Reserva algo de
+oxígeno para la vuelta.
+
+
+ENEMIGOS:
+
+INFECTADO: Anteriores compañeros que intentaron
+realizar la misión y no lo consiguieron. La picadura de
+los aracnovirus les mantiene en un estado de NO
+muertos. Se mueven de manera lineal y pueden ser muy
+rápidos, elimínalos antes de que te contagien.
+
+ARACNOVIRUS: De movimientos erráticos y rápidos.
+Suelen moverse por el aire. Son los alienígenas más
+numerosos que han colonizado la base.
+
+PELUSOIDE: Son muy inteligentes. Pueden
+permanecer agazapados esperando tu llegada. Si te
+ven o te oyen, se abalanzarán sobre ti. En ese caso
+acaba con ellos cuanto antes. Lo mejor es mantenerse a
+distancia.
+
+
+CONTROL DE JUEGO:
+
+1: Teclado.
+2: Joystick.
+
+Q: Saltar.
+A: Acción (Depositar explosivos, pulsar detonador)
+O: Izquierda.
+P: Derecha.
+SPC: Disparo.
+
+M: Música Sí/No
+Enter: Pausa.
+ESC: Cancelar partida.
+
+
+La imagen de la pantalla de carga y la carátula
+se ha obtenido (con permiso de su autor)
+del original "Astronaut", de Michael Smith.
+Síguelo en twitter/instagram en @Doodlebags
+
+Un agradecimiento muy especial a los "Mojon Twins"
+por perfeccionar y compartir su motor de juegos MK1.
