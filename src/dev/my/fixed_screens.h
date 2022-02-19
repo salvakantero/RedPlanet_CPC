@@ -12,13 +12,24 @@ void game_ending (void) {
 		unpack ((unsigned int) (s_ending), BASE_SUPERBUFF);
 	#endif */
 	cpc_ShowTileMap (1);
-	_x = 5; _y =  9; _gp_gen = " !                   ! "; print_str();
-	_x = 5; _y = 10; _gp_gen = " ! OBJETIVO CUMPLIDO ! "; print_str();
-	_x = 5; _y = 11; _gp_gen = " !                   ! "; print_str();
-	_x = 5; _y = 12; _gp_gen = " !    ES HORA DE     ! "; print_str();
-	_x = 5; _y = 13; _gp_gen = " !  REGRESAR A CASA  ! "; print_str();
-	_x = 5; _y = 14; _gp_gen = " !                   ! "; print_str();
+	
+	#ifdef ENGLISH_LANG
+		_x = 5; _y =  9; _gp_gen = " !                   ! "; print_str();
+		_x = 5; _y = 10; _gp_gen = " !      MISSION      ! "; print_str();
+		_x = 5; _y = 11; _gp_gen = " !   ACCOMPLISHED.   ! "; print_str();
+		_x = 5; _y = 12; _gp_gen = " !     ITS TIME      ! "; print_str();
+		_x = 5; _y = 13; _gp_gen = " !    TO GO HOME.    ! "; print_str();
+		_x = 5; _y = 14; _gp_gen = " !                   ! "; print_str();
+	#else
+		_x = 5; _y =  9; _gp_gen = " !                   ! "; print_str();
+		_x = 5; _y = 10; _gp_gen = " ! OBJETIVO CUMPLIDO ! "; print_str();
+		_x = 5; _y = 11; _gp_gen = " !                   ! "; print_str();
+		_x = 5; _y = 12; _gp_gen = " !    ES HORA DE     ! "; print_str();
+		_x = 5; _y = 13; _gp_gen = " !  REGRESAR A CASA  ! "; print_str();
+		_x = 5; _y = 14; _gp_gen = " !                   ! "; print_str();
+
 	cpc_UpdateNow (0);
+	
 	AY_PLAY_MUSIC (0)
 	espera_activa (500);
 	AY_STOP_SOUND ();

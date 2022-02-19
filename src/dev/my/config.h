@@ -7,6 +7,8 @@
 // I. General configuration
 // ============================================================================
 
+#define ENGLISH_LANG						// Otherwise spanish
+
 //#define SOUND_NONE
 #define SOUND_WYZ
 #define WYZ_FX_CHANNEL 				1		// Where to play sound effects

@@ -32,5 +32,5 @@ POR HACER
 - sonido al poner explosivos
 - música
 - testing final y graduación de dificultad
-- versión en inglés
+- idiomas; ES-EN
 - comprobar joystick
