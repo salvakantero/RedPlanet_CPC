@@ -5,73 +5,68 @@ RED PLANET
 
 Amstrad CPC 464 - © salvaKantero 2015/22
 
-Conduce a nuestro héroe al subsuelo de la antigua
-estación espacial para volar todo el complejo y acabar
-con sus malignos habitantes. Pero cuidado, el entorno
-es peligroso. Evita entrar en contacto con los enemigos, 
-y caer en los pozos de lava o de residuos radiactivos.
+Lead our hero into the underground of the old space 
+station to blow up the entire complex and wipe out its
+evil inhabitants. But beware, the environment is dangerous. 
+Avoid coming into contact with the enemies, and falling 
+into the lava or radioactive waste pits.
 
-Para acabar con éxito la misión debes obtener los 10
-explosivos que hay repartidos por la estación, y
-situarlos en el depósito de explosivos, en lo más
-profundo de la base marciana. Una vez depositados, tienes 
-que regresar al centro de control y activar el detonador.
+To successfully complete the mission you must obtain the 
+10 explosives that are scattered around the station, and 
+place them in the explosives depot, deep inside the 
+Martian base. Once deposited, you must return to the 
+control centre and activate the detonator.
 
-En ocasiones tendrás que acceder a zonas cerradas con
-tarjeta de acceso, por lo que previamente deberás
-localizar estas tarjetas para continuar tu misión.
+Sometimes you will have to access locked areas with access 
+cards, so you will have to locate these cards before you 
+can continue your mission.
 
-Tienes la posibilidad de disparar balas de plasma
-contra tus enemigos, pero cuidado, no malgastes
-munición, ya que ésta es escasa. Hay recargas
-repartidas por todo el complejo. Reserva algo de munición
-para la vuelta.
+You have the possibility to fire plasma bullets against 
+your enemies, but be careful, don't waste ammunition is 
+scarce. There are refills scattered throughout the complex. 
+Reserve some ammunition for the way back.
 
-El oxígeno disponible es muy escaso. Vigila el estado de
-tus botellas de oxígeno y busca otras nuevas antes de
-que se agoten o morirás en el acto. Reserva algo de
-oxígeno para la vuelta.
+Available oxygen is very scarce. Keep an eye on the condition
+of your oxygen tanks and find new ones before they run out or 
+you will die on the spot. Reserve some oxygen for the return.
 
 
-ENEMIGOS:
+ENEMIES:
 
-INFECTADO: Anteriores compañeros que intentaron
-realizar la misión y no lo consiguieron. La picadura de
-los aracnovirus les mantiene en un estado de NO
-muertos. Se mueven de manera lineal y pueden ser muy
-rápidos, elimínalos antes de que te contagien.
+INFECTED: Previous companions who attempted the mission and 
+failed. The bite of the arachnoviruses keeps them in an 
+undead state. They move in a linear fashion and can be very 
+fast. Take them out before they infect you.
 
-ARACNOVIRUS: De movimientos erráticos y rápidos.
-Suelen moverse por el aire. Son los alienígenas más
-numerosos que han colonizado la base.
+ARACHNOVIRUS: Erratic and fast moving. They usually move 
+through the air. They are the most numerous aliens that 
+have colonised the base.
 
-PELUSOIDE: Son muy inteligentes. Pueden
-permanecer agazapados esperando tu llegada. Si te
-ven o te oyen, se abalanzarán sobre ti. En ese caso
-acaba con ellos cuanto antes. Lo mejor es mantenerse a
-distancia.
+PELUSOID: They are very intelligent. They can remain crouched 
+waiting for your arrival. If they see or hear you, they will 
+pounce on you. In that case finish them off as soon as possible. 
+It is best to keep your distance.
 
 
-CONTROL DE JUEGO:
+GAME CONTROL:
 
-1: Teclado.
-2: Joystick.
+1:	Keyboard.
+2:	Joystick.
 
-Q: Saltar.
-A: Acción. (Depositar explosivos, pulsar detonador)
-O: Izquierda.
-P: Derecha.
-SPC: Disparo.
+Q:	Jump.
+A:	Action. (Deposit explosives, press detonator)
+O:	Left.
+P:	Right.
+SPC:	Shoot.
 
-M: Música Sí/No.
-Enter: Pausa.
-ESC: Cancelar partida.
+M:	Music Yes/No.
+Enter:Pause.
+ESC:	Cancel game.
 
 
-La imagen de la pantalla de carga y la carátula
-se ha obtenido (con permiso de su autor)
-del original "Astronaut", de Michael Smith.
-Síguelo en twitter/instagram en @Doodlebags.
+The image of the loading screen and the cover artwork  is taken 
+(with permission of the author) from the original "Astronaut" by 
+Michael Smith. Follow him on twitter/instagram at @Doodlebags.
 
-Un agradecimiento muy especial a los "Mojon Twins"
-por perfeccionar y compartir su motor de juegos MK1.
+A very special thanks to the "Mojon Twins" for refining and 
+sharing their MK1 game engine.
