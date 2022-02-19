@@ -33,4 +33,4 @@ POR HACER
 - música
 - testing final y graduación de dificultad
 - versión en inglés
-
+- comprobar joystick

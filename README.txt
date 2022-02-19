@@ -58,12 +58,12 @@ CONTROL DE JUEGO:
 2: Joystick.
 
 Q: Saltar.
-A: Acción (Depositar explosivos, pulsar detonador)
+A: Acción. (Depositar explosivos, pulsar detonador)
 O: Izquierda.
 P: Derecha.
 SPC: Disparo.
 
-M: Música Sí/No
+M: Música Sí/No.
 Enter: Pausa.
 ESC: Cancelar partida.
 
@@ -71,7 +71,7 @@ ESC: Cancelar partida.
 La imagen de la pantalla de carga y la carátula
 se ha obtenido (con permiso de su autor)
 del original "Astronaut", de Michael Smith.
-Síguelo en twitter/instagram en @Doodlebags
+Síguelo en twitter/instagram en @Doodlebags.
 
 Un agradecimiento muy especial a los "Mojon Twins"
 por perfeccionar y compartir su motor de juegos MK1.
