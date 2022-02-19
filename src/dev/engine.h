@@ -541,7 +541,7 @@ void draw_scr (void) {
 	{
 #ifdef ENGLISH_LANG
 		case 0:
-			_gp_gen = "!!!!!!!_CONTROL_CENTER_!!!!!!!";
+			_gp_gen = "!!!!!!!_CONTROL_CENTRE_!!!!!!!";
 			break;
 		case 1:
 			_gp_gen = "!!!!!!!_SUPPLY_DEPOT_1_!!!!!!!";
@@ -602,7 +602,7 @@ void draw_scr (void) {
 			_gp_gen = "!!!!!_SIDE_HALL_LEVEL_-4_!!!!!";
 			break;
 		case 21:
-			_gp_gen = "!!!!!!_ARACNOVIRUS_LAIR_!!!!!!";
+			_gp_gen = "!!!!!_ARACHNOVIRUS_LAIR_!!!!!!";
 			break;
 		case 22:
 		case 23:
