@@ -27,9 +27,9 @@ void game_ending (void) {
 		_x = 5; _y = 12; _gp_gen = " !    ES HORA DE     ! "; print_str();
 		_x = 5; _y = 13; _gp_gen = " !  REGRESAR A CASA  ! "; print_str();
 		_x = 5; _y = 14; _gp_gen = " !                   ! "; print_str();
+	#endif
 
 	cpc_UpdateNow (0);
-	
 	AY_PLAY_MUSIC (0)
 	espera_activa (500);
 	AY_STOP_SOUND ();

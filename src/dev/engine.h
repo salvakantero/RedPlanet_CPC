@@ -539,6 +539,93 @@ void draw_scr (void) {
 	_y = LINE_OF_TEXT; 
 	switch (n_pant)
 	{
+#ifdef ENGLISH_LANG
+		case 0:
+			_gp_gen = "!!!!!!!_CONTROL_CENTER_!!!!!!!";
+			break;
+		case 1:
+			_gp_gen = "!!!!!!!_SUPPLY_DEPOT_1_!!!!!!!";
+			break;
+		case 2:
+			_gp_gen = "!!!!_CENTRAL_HALL_LEVEL_0_!!!!";
+			break;
+		case 3:
+			_gp_gen = "!!!_TOXIC_WASTE_STORAGE_1A_!!!";
+			break;
+		case 4:
+			_gp_gen = "!!!_TOXIC_WASTE_STORAGE_1B_!!!";
+			break;
+		case 5:
+			_gp_gen = "!!!_WEST_PASSAGE__LEVEL_-1_!!!";
+			break;
+		case 6:
+			_gp_gen = "!!_ACCESS_TO_WEST_PASSAGES_!!!";
+			break;
+		case 7:
+			_gp_gen = "!!!_CENTRAL_HALL__LEVEL_-1_!!!";
+			break;
+		case 8:
+			_gp_gen = "!!!!!_ACCESS_TO_DUNGEONS_!!!!!";
+			break;
+		case 9:
+			_gp_gen = "!!!!!!!!!!_DUNGEONS_!!!!!!!!!!";
+			break;
+		case 10:
+			_gp_gen = "!!!_WEST_PASSAGE__LEVEL_-2_!!!";
+			break;
+		case 11:
+			_gp_gen = "!!!!!!!_SUPPLY_DEPOT_2_!!!!!!!";
+			break;
+		case 12:
+			_gp_gen = "!!!_CENTRAL_HALL__LEVEL_-2_!!!";
+			break;
+		case 13:
+			_gp_gen = "!!_ACCESS_TO_SOUTHEAST_EXIT_!!";
+			break;
+		case 14:
+			_gp_gen = "!!!!_EXIT_TO_UNDERGROUND_!!!!!";
+			break;
+		case 15:
+			_gp_gen = "!!!!!!!_PELUSOIDS_LAIR_!!!!!!!";
+			break;
+		case 16:
+		case 17:
+			_gp_gen = "!!!!!!_ALVARITOS_GROTTO_!!!!!!";
+			break;	
+		case 18:
+			_gp_gen = "!!!_TOXIC_WASTE_STORAGE_2A_!!!";
+			break;
+		case 19:
+			_gp_gen = "!!!!!_UNDERGROUND_TUNNEL_!!!!!";
+			break;
+		case 20:
+			_gp_gen = "!!!!!_SIDE_HALL_LEVEL_-4_!!!!!";
+			break;
+		case 21:
+			_gp_gen = "!!!!!!_ARACNOVIRUS_LAIR_!!!!!!";
+			break;
+		case 22:
+		case 23:
+			_gp_gen = "!!!!!_UNSTABLE_CORRIDORS_!!!!!";
+			break;
+		case 24:
+			_gp_gen = "!!!_TOXIC_WASTE_STORAGE_2B_!!!";
+			break;
+		case 25:
+			_gp_gen = "!!!!!_SIDE_HALL_LEVEL_-5_!!!!!";
+			break;
+		case 26:
+		case 27:
+		case 28:
+			_gp_gen = "!!!!!!!_ABANDONED_MINE_!!!!!!!";
+			break;
+		case 29:
+			if (flags[2] == 0)
+				_gp_gen = "!!!!_EXPLOSIVES_STOCKPILE_!!!!";
+			else
+				_gp_gen = "!!!_BACK_TO_CONTROL_CENTER_!!!";
+			break;
+#else
 		case 0:
 			_gp_gen = "!!!!!_CENTRO_DE_CONTROL_!!!!!!";
 			break;
@@ -625,7 +712,8 @@ void draw_scr (void) {
 				_gp_gen = "!!!_DEPOSITO_DE_EXPLOSIVOS_!!!";
 			else
 				_gp_gen = "_REGRESA_AL_CENTRO_DE_CONTROL_";
-			break;			
+			break;
+#endif		
 	}
 	print_str ();
 	
