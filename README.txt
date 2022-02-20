@@ -43,13 +43,13 @@ It is best to keep your distance.
 
 GAME CONTROL:
 
-1:	    Keyboard.
-2:	    Joystick.
+1:      Keyboard.
+2:      Joystick.
 
-Q:	    Jump.
-A:	    Action. (Deposit explosives, press detonator)
-O:	    Left.
-P:	    Right.
+Q:      Jump.
+A:      Action. (Deposit explosives, press detonator)
+O:      Left.
+P:      Right.
 SPACE:  Shoot.
 
 M:      Music Yes/No.
