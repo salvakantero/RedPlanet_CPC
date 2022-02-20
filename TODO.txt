@@ -28,8 +28,9 @@ HECHO
 POR HACER
 =========
 
+- decorations
 - sonidos FX
 - sonido al poner explosivos
-- música
+- músicas
 - testing final y graduación de dificultad
 - comprobar joystick
