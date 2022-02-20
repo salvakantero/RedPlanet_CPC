@@ -23,7 +23,7 @@ HECHO
 02/02/22 - aminorar velocidad de animación
 13/02/22 - tecla MUTE (M)
 18/02/22 - documentación
-
+19/02/22 - idiomas; ES-EN
 
 POR HACER
 =========
@@ -32,5 +32,4 @@ POR HACER
 - sonido al poner explosivos
 - música
 - testing final y graduación de dificultad
-- idiomas; ES-EN
 - comprobar joystick

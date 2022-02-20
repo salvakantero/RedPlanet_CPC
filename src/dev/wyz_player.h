@@ -40,6 +40,154 @@ void wyz_stop_sound (void) {
 }
 
 #asm
+	// custom salva
+	;0 Iniciar
+	EFECTO0:	DB $FF
+
+	;1 Golpear tile rompible
+	EFECTO1:	DB $FF
+
+	;2 Romper tile rompible
+	EFECTO2:	DB $FF
+
+	;3 Empujar tile
+	EFECTO3:	DB $FF
+
+	;4 Disparar
+	EFECTO4:	DB $B8, $BF, $1F
+				DB $B8, $BF, $1F
+				DB $B8, $BF, $1F
+				DB $B8, $BF, $1F
+				DB $B8, $CF, $1F
+				DB $91, $AC, $1C
+				DB $80, $9A, $19
+				DB $61, $67, $18
+				DB $35, $45, $12
+				DB $18, $33, $0D
+				DB $FF
+
+	;5 Coger objeto
+	EFECTO5:	DB $1F, $0B, $00
+				DB $5A, $0F, $00
+				DB $3C, $0F, $00
+				DB $1E, $0A, $00
+				DB $2D, $0A, $00
+				DB $5A, $05, $00
+				DB $3C, $05, $00
+				DB $1E, $04, $00
+				DB $2D, $02, $00
+				DB $B4, $01, $00
+				DB	$FF
+
+	;6 Matar a un enemigo
+	EFECTO6:	DB $E8, $1B, $00
+				DB $5F, $0F, $00
+				DB $E2, $0F, $00
+				DB $56, $0F, $00
+				DB $F6, $0F, $00
+				DB $14, $0E, $00
+				DB $64, $0E, $00	
+				DB $62, $0D, $00
+				DB $D0, $0D, $00
+				DB $F1, $0C, $00
+				DB	$FF	
+
+	;7 Golpear a un enemigo
+	EFECTO7:	DB $C3, $0E, $00
+				DB $5F, $0F, $00
+				DB $A6, $0F, $00
+				DB $E8, $1B, $00
+				DB $80, $2B, $00
+				DB	$FF
+
+	;8 Modo un sólo objeto, recoger
+	EFECTO8:	DB	$FF
+
+	;9 Modo un sólo objeto, ya tengo
+	EFECTO9:	DB	$FF	
+
+	;10 Coger una llave
+	EFECTO10:	DB $1F, $0B, $00
+				DB $5A, $0F, $00
+				DB $3C, $0F, $00
+				DB $1E, $0A, $00
+				DB $2D, $0A, $00
+				DB $5A, $05, $00
+				DB $3C, $05, $00
+				DB $1E, $04, $00
+				DB $2D, $02, $00
+				DB $B4, $01, $00
+				DB	$FF
+
+	;11 Coger cualquier tipo de refill
+	EFECTO11:	DB $1A, $0E, $00
+				DB $B4, $0E, $00
+				DB $B4, $0E, $00
+				DB $B4, $0E, $00
+				DB $B4, $0E, $00
+				DB $B4, $0E, $00
+				DB $B4, $0E, $00
+				DB $B4, $0E, $00
+				DB $B4, $0E, $00	
+				DB $A0, $0E, $00
+				DB $A0, $0E, $00
+				DB $A0, $0E, $00
+				DB $A0, $0E, $00
+				DB $A0, $0E, $00
+				DB $A0, $0E, $00
+				DB $A0, $0E, $00
+				DB $87, $0E, $00
+				DB $87, $0E, $00
+				DB $87, $0E, $00
+				DB $87, $0E, $00
+				DB $87, $0E, $00
+				DB $87, $0E, $00
+				DB $87, $0E, $00
+				DB $87, $0E, $00
+				DB $87, $0E, $00		
+				DB $78, $0E, $00
+				DB $78, $0E, $00
+				DB $78, $0D, $00
+				DB $78, $0D, $00
+				DB $78, $0D, $00
+				DB $78, $0D, $00
+				DB $78, $0D, $00
+				DB $78, $0D, $00
+				DB $78, $0C, $00
+				DB $78, $09, $00
+				DB $78, $06, $00
+				DB $78, $05, $00	
+				DB	$FF
+				
+	;12 Sartar
+	EFECTO12:	DB $E8, $1B, $00
+				DB $B4, $0F, $00
+				DB $A0, $0E, $00
+				DB $90, $0D, $00
+				DB $87, $0D, $00
+				DB $78, $0C, $00	
+				DB $6C, $0B, $00	
+				DB $60, $0A, $00	
+				DB $5A, $09, $00
+				DB	$FF	
+
+	;13 Puncho
+	EFECTO13:	DB $E8, $1B, $00
+				DB $5F, $0F, $00
+				DB $A6, $0F, $00
+				DB $00, $00, $00
+				DB $80, $0F, $00
+				DB	$FF	
+
+	;14 Ser golpeado por enemigo
+	EFECTO14:	DB $E8, $1B, $00
+				DB $5F, $0F, $00
+				DB $A6, $0F, $00
+				DB $00, $00, $00
+				DB $80, $0F, $00
+				DB	$FF	
+
+
 	; CPC PSG proPLAYER V 0.47c - WYZ 19.03.2016
 	; (WYZTracker 2.0 o superior)
 

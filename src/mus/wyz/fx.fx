@@ -3,23 +3,15 @@
   <Effect>
     <ID>0</ID>
     <Name>0</Name>
-    <Volumes>CAgICAg=</Volumes>
-    <Noises>AAECAwQ=</Noises>
+    <Volumes>CA==</Volumes>
+    <Noises>AA==</Noises>
     <Frequencies>
-      <int>440</int>
-      <int>440</int>
-      <int>440</int>
-      <int>440</int>
       <int>440</int>
     </Frequencies>
     <EnvFreqs>
       <int>0</int>
-      <int>0</int>
-      <int>0</int>
-      <int>0</int>
-      <int>0</int>
     </EnvFreqs>
-    <EnvTypes>AAAAAAA=</EnvTypes>
+    <EnvTypes>AA==</EnvTypes>
   </Effect>
   <Effect>
     <ID>1</ID>
@@ -27,7 +19,7 @@
     <Volumes>CAgICAg=</Volumes>
     <Noises>AAECAwQ=</Noises>
     <Frequencies>
-      <int>113</int>
+      <int>440</int>
       <int>440</int>
       <int>440</int>
       <int>440</int>
@@ -48,7 +40,7 @@
     <Volumes>CAgICAg=</Volumes>
     <Noises>AAECAwQ=</Noises>
     <Frequencies>
-      <int>113</int>
+      <int>440</int>
       <int>440</int>
       <int>440</int>
       <int>440</int>
@@ -69,7 +61,7 @@
     <Volumes>CAgICAg=</Volumes>
     <Noises>AAECAwQ=</Noises>
     <Frequencies>
-      <int>101</int>
+      <int>440</int>
       <int>440</int>
       <int>440</int>
       <int>440</int>
@@ -87,22 +79,32 @@
   <Effect>
     <ID>4</ID>
     <Name>4</Name>
-    <Volumes>CQgICAg=</Volumes>
-    <Noises>mAECAwQ=</Noises>
+    <Volumes>Dw8PDw8MCgcFAw==</Volumes>
+    <Noises>n5+fn5+cmZiSjQ==</Noises>
     <Frequencies>
-      <int>113</int>
-      <int>440</int>
-      <int>440</int>
-      <int>440</int>
-      <int>440</int>
+      <int>3000</int>
+      <int>3000</int>
+      <int>3000</int>
+      <int>3000</int>
+      <int>3256</int>
+      <int>2705</int>
+      <int>2432</int>
+      <int>1633</int>
+      <int>1077</int>
+      <int>792</int>
     </Frequencies>
     <EnvFreqs>
-      <int>1388</int>
+      <int>0</int>
+      <int>0</int>
+      <int>0</int>
+      <int>0</int>
+      <int>0</int>
+      <int>0</int>
       <int>0</int>
       <int>0</int>
       <int>0</int>
       <int>0</int>
     </EnvFreqs>
-    <EnvTypes>DAAAAAA=</EnvTypes>
+    <EnvTypes>AA0NDQwMAAAAAA==</EnvTypes>
   </Effect>
 </ArrayOfEffect>
