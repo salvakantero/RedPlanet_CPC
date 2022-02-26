@@ -24,11 +24,11 @@ HECHO
 13/02/22 - tecla MUTE (M)
 18/02/22 - documentación
 19/02/22 - idiomas; ES-EN
+26/02/22 - decorations
 
 POR HACER
 =========
 
-- decorations
 - sonidos FX
 - sonido al poner explosivos
 - músicas

@@ -9,8 +9,6 @@ void msc_init_all (void) {
 }
 #endif
 
-
-
 unsigned char read_byte (void) {
     #asm
             ld  hl, (_script)
@@ -58,6 +56,8 @@ void reloc_player (void) {
 void read_two_bytes_D_E (void) {
     #asm
             // Read two bytes: flag #, number
+
+
                 ld  hl, (_script)
                 ld  d, (hl)         // flag #
                 inc hl
@@ -173,29 +173,19 @@ void run_script (unsigned char whichs) {
                                 ld  (hl), a
                         #endasm
                         break;
-                    case 0x20:
-                        // SET TILE (sc_x, sc_y) = sc_n
-                        // Opcode: 20 sc_x sc_y sc_n
-                        readxy ();
-                        sc_n = read_vbyte ();
-                        _x = sc_x; _y = sc_y; _n = behs [sc_n]; _t = sc_n; update_tile ();
-                        break;
-					// custom salva
-					// screen titles in engine.h
-					/*	
-                    case 0xE3:
-                        sc_x = 0;
-                        while (1) {
-                           sc_n = read_byte ();
-                           if (sc_n == 0xEE) break;
-                           sp_PrintAtInv (LINE_OF_TEXT, LINE_OF_TEXT_X + sc_x, LINE_OF_TEXT_ATTR, sc_n);
-						   sc_x ++;
-                        }
-                        break; */
                     case 0xF1:
                         // WIN
                         script_result = 1;
                         return;
+                    case 0xF4:
+                        // DECORATIONS
+                        #asm
+                               ld  hl, (_script)
+                               call _draw_decorations_loop
+                               inc hl
+                               ld  (_script), hl
+                        #endasm
+                        break;
                     case 0xFF:
                         sc_terminado = 1;
                         break;
