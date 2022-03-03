@@ -23,7 +23,8 @@ Keep an eye on the condition of your oxygen tanks and find new ones before they 
 Reserve some oxygen for the return.
 
 
-ENEMIES:
+ENEMIES
+=======
 
 INFECTED: Previous companions who attempted the mission and failed. 
 The bite of the arachnoviruses keeps them in an undead state.
@@ -41,7 +42,8 @@ In that case finish them off as soon as possible.
 It is best to keep your distance.
 
 
-GAME CONTROL:
+GAME CONTROL
+============
 
 1:      Keyboard.
 2:      Joystick.

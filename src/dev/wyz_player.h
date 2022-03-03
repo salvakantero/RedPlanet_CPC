@@ -57,13 +57,6 @@ void wyz_stop_sound (void) {
 	EFECTO4:	DB $B8, $BF, $1F
 				DB $B8, $BF, $1F
 				DB $B8, $BF, $1F
-				DB $B8, $BF, $1F
-				DB $B8, $CF, $1F
-				DB $91, $AC, $1C
-				DB $80, $9A, $19
-				DB $61, $67, $18
-				DB $35, $45, $12
-				DB $18, $33, $0D
 				DB $FF
 
 	;5 Coger objeto
@@ -160,16 +153,11 @@ void wyz_stop_sound (void) {
 				DB	$FF
 				
 	;12 Sartar
-	EFECTO12:	DB $E8, $1B, $00
-				DB $B4, $0F, $00
-				DB $A0, $0E, $00
-				DB $90, $0D, $00
-				DB $87, $0D, $00
-				DB $78, $0C, $00	
-				DB $6C, $0B, $00	
-				DB $60, $0A, $00	
-				DB $5A, $09, $00
-				DB	$FF	
+	EFECTO12:	defb 0xAF, 0x0F, 0x00
+				defb 0x8A, 0x0F, 0x00
+				defb 0x71, 0x0F, 0x00
+				defb 0x64, 0x0F, 0x00
+				defb 0xFF	
 
 	;13 Puncho
 	EFECTO13:	DB $E8, $1B, $00

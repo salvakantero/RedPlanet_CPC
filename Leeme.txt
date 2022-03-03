@@ -22,7 +22,8 @@ Vigila el estado de tus botellas de oxígeno y busca otras nuevas antes de que s
 Reserva algo de oxígeno para la vuelta.
 
 
-ENEMIGOS:
+ENEMIGOS
+========
 
 INFECTADO: Anteriores compañeros que intentaron realizar la misión y no lo consiguieron.
 La picadura de los aracnovirus les mantiene en un estado de NO muertos.
@@ -37,7 +38,8 @@ En ese caso acaba con ellos cuanto antes.
 Lo mejor es mantenerse a distancia.
 
 
-CONTROL DE JUEGO: 
+CONTROL DE JUEGO
+================
 
 1:      Teclado.
 2:      Joystick.
