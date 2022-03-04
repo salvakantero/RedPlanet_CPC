@@ -44,15 +44,22 @@ void wyz_stop_sound (void) {
 	;0 Iniciar
 	;1 Golpear tile rompible
 	;2 Romper tile rompible
-	;3 Empujar tile
 	;8 Modo un sólo objeto, recoger
 	;9 Modo un sólo objeto, ya tengo
 	EFECTO0:
 	EFECTO1:
 	EFECTO2:
-	EFECTO3:
 	EFECTO8:
 	EFECTO9:	DB $FF	
+
+	;3 Empujar tile / Abrir puerta
+	EFECTO3:	defb 0xA6, 0x0F, 0x00
+				defb 0x00, 0x00, 0x00
+				defb 0x80, 0x0F, 0x00
+				defb 0xE8, 0x1B, 0x00
+				defb 0x5F, 0x0F, 0x00
+				defb 0xA6, 0x0F, 0x00
+				defb 0xFF
 
 	;4 Disparar
 	EFECTO4:	DB $B8, $BF, $AF
@@ -117,8 +124,20 @@ void wyz_stop_sound (void) {
 				defb 0xFF	
 
 	;13 Puncho
-	;14 Ser golpeado por enemigo
-	EFECTO13:
+	EFECTO13:	DB $22, $EF
+				DB $01, $DF
+				DB $1F, $CF
+				DB $6F, $BF
+				DB $B7, $9F
+				DB $FE, $FF
+				DB $22, $EF
+				DB $01, $DF
+				DB $1F, $CF
+				DB $6F, $BF
+				DB $B7, $9F
+				DB $FF 
+
+	;14 Ser golpeado por enemigo		
 	EFECTO14:	DB $F0, $FF, $1F
 				DB $FF
 

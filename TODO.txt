@@ -32,7 +32,6 @@ HECHO
 POR HACER
 =========
 
-- sonido puertas abiertas
 - tour de pantallas
 - comprobar joystick
 - música intro
