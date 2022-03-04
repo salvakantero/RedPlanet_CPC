@@ -42,139 +42,85 @@ void wyz_stop_sound (void) {
 #asm
 	// custom salva
 	;0 Iniciar
-	EFECTO0:	DB $FF
-
 	;1 Golpear tile rompible
-	EFECTO1:	DB $FF
-
 	;2 Romper tile rompible
-	EFECTO2:	DB $FF
-
 	;3 Empujar tile
-	EFECTO3:	DB $FF
+	;8 Modo un sólo objeto, recoger
+	;9 Modo un sólo objeto, ya tengo
+	EFECTO0:
+	EFECTO1:
+	EFECTO2:
+	EFECTO3:
+	EFECTO8:
+	EFECTO9:	DB $FF	
 
 	;4 Disparar
-	EFECTO4:	DB $B8, $BF, $1F
-				DB $B8, $BF, $1F
-				DB $B8, $BF, $1F
+	EFECTO4:	DB $B8, $BF, $AF
 				DB $FF
 
-	;5 Coger objeto
-	EFECTO5:	DB $1F, $0B, $00
-				DB $5A, $0F, $00
-				DB $3C, $0F, $00
-				DB $1E, $0A, $00
-				DB $2D, $0A, $00
-				DB $5A, $05, $00
-				DB $3C, $05, $00
-				DB $1E, $04, $00
-				DB $2D, $02, $00
-				DB $B4, $01, $00
-				DB	$FF
+	; 5 Coger objeto
+	;10 Coger una llave 
+	;11 Coger cualquier tipo de refill
+	EFECTO5:
+	EFECTO10:
+	EFECTO11:	defb 0x25, 0x1C, 0x00
+				defb 0x3A, 0x0F, 0x00
+				defb 0x2D, 0x0F, 0x00
+				defb 0x96, 0x0D, 0x00
+				defb 0x4B, 0x0D, 0x00
+				defb 0x2D, 0x0C, 0x00
+				defb 0xBC, 0x0C, 0x00
+				defb 0x96, 0x0B, 0x00
+				defb 0x32, 0x0B, 0x00
+				defb 0x4B, 0x0A, 0x00
+				defb 0x3A, 0x0A, 0x00
+				defb 0x2D, 0x09, 0x00
+				defb 0xE2, 0x09, 0x00
+				defb 0xBC, 0x08, 0x00
+				defb 0x4B, 0x08, 0x00
+				defb 0x32, 0x07, 0x00
+				defb 0x3A, 0x07, 0x00
+				defb 0x2D, 0x06, 0x00
+				defb 0xBC, 0x06, 0x00
+				defb 0x96, 0x05, 0x00
+				defb 0x32, 0x05, 0x00
+				defb 0x3A, 0x04, 0x00
+				defb 0x2D, 0x04, 0x00
+				defb 0xE2, 0x03, 0x00
+				defb 0x4B, 0x03, 0x00
+				defb 0x32, 0x02, 0x00
+				defb 0x3A, 0x01, 0x00
+				defb 0x2D, 0x01, 0x00
+				defb 0xFF
 
-	;6 Matar a un enemigo
-	EFECTO6:	DB $E8, $1B, $00
-				DB $5F, $0F, $00
-				DB $E2, $0F, $00
-				DB $56, $0F, $00
-				DB $F6, $0F, $00
-				DB $14, $0E, $00
-				DB $64, $0E, $00	
-				DB $62, $0D, $00
-				DB $D0, $0D, $00
-				DB $F1, $0C, $00
-				DB	$FF	
+	;6 Matar a un enemigo (termina efecto disparo)
+	EFECTO6:	DB $00, $FF, $1F
+				DB $FF
 
 	;7 Golpear a un enemigo
-	EFECTO7:	DB $C3, $0E, $00
-				DB $5F, $0F, $00
-				DB $A6, $0F, $00
-				DB $E8, $1B, $00
-				DB $80, $2B, $00
-				DB	$FF
-
-	;8 Modo un sólo objeto, recoger
-	EFECTO8:	DB	$FF
-
-	;9 Modo un sólo objeto, ya tengo
-	EFECTO9:	DB	$FF	
-
-	;10 Coger una llave
-	EFECTO10:	DB $1F, $0B, $00
-				DB $5A, $0F, $00
-				DB $3C, $0F, $00
-				DB $1E, $0A, $00
-				DB $2D, $0A, $00
-				DB $5A, $05, $00
-				DB $3C, $05, $00
-				DB $1E, $04, $00
-				DB $2D, $02, $00
-				DB $B4, $01, $00
-				DB	$FF
-
-	;11 Coger cualquier tipo de refill
-	EFECTO11:	DB $1A, $0E, $00
-				DB $B4, $0E, $00
-				DB $B4, $0E, $00
-				DB $B4, $0E, $00
-				DB $B4, $0E, $00
-				DB $B4, $0E, $00
-				DB $B4, $0E, $00
-				DB $B4, $0E, $00
-				DB $B4, $0E, $00	
-				DB $A0, $0E, $00
-				DB $A0, $0E, $00
-				DB $A0, $0E, $00
-				DB $A0, $0E, $00
-				DB $A0, $0E, $00
-				DB $A0, $0E, $00
-				DB $A0, $0E, $00
-				DB $87, $0E, $00
-				DB $87, $0E, $00
-				DB $87, $0E, $00
-				DB $87, $0E, $00
-				DB $87, $0E, $00
-				DB $87, $0E, $00
-				DB $87, $0E, $00
-				DB $87, $0E, $00
-				DB $87, $0E, $00		
-				DB $78, $0E, $00
-				DB $78, $0E, $00
-				DB $78, $0D, $00
-				DB $78, $0D, $00
-				DB $78, $0D, $00
-				DB $78, $0D, $00
-				DB $78, $0D, $00
-				DB $78, $0D, $00
-				DB $78, $0C, $00
-				DB $78, $09, $00
-				DB $78, $06, $00
-				DB $78, $05, $00	
-				DB	$FF
+	EFECTO7:	DB $B8, $1B, $1F
+				DB $B8, $1B, $1F
+				DB $B8, $0F, $1F
+				DB $B8, $0F, $1F
+				DB $B8, $0E, $1F
+				DB $08, $0E, $1F
+				DB $08, $0D, $1F
+				DB $08, $0D, $1F
+				DB $08, $0C, $1F
+				DB $FF
 				
 	;12 Sartar
-	EFECTO12:	defb 0xAF, 0x0F, 0x00
-				defb 0x8A, 0x0F, 0x00
-				defb 0x71, 0x0F, 0x00
-				defb 0x64, 0x0F, 0x00
+	EFECTO12:	defb 0xAF, 0x0C, 0x00
+				defb 0x8A, 0x0C, 0x00
+				defb 0x71, 0x0C, 0x00
+				defb 0x64, 0x0C, 0x00
 				defb 0xFF	
 
 	;13 Puncho
-	EFECTO13:	DB $E8, $1B, $00
-				DB $5F, $0F, $00
-				DB $A6, $0F, $00
-				DB $00, $00, $00
-				DB $80, $0F, $00
-				DB	$FF	
-
 	;14 Ser golpeado por enemigo
-	EFECTO14:	DB $E8, $1B, $00
-				DB $5F, $0F, $00
-				DB $A6, $0F, $00
-				DB $00, $00, $00
-				DB $80, $0F, $00
-				DB	$FF	
-
+	EFECTO13:
+	EFECTO14:	DB $F0, $FF, $1F
+				DB $FF
 
 	; CPC PSG proPLAYER V 0.47c - WYZ 19.03.2016
 	; (WYZTracker 2.0 o superior)
