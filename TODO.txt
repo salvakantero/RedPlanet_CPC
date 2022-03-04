@@ -27,12 +27,16 @@ HECHO
 26/02/22 - decorations
 04/02/22 - sonidos FX
 04/02/22 - sonido al poner explosivos
+04/02/22 - graduación de dificultad
 
 POR HACER
 =========
 
+- sonido puertas abiertas
 - tour de pantallas
-- testing final y graduación de dificultad
 - comprobar joystick
-- músicas
+- música intro
+- música ingame
+- música gameover
+- testing final
 - imagen promocional

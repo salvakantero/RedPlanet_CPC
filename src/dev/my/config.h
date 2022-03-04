@@ -134,7 +134,7 @@
 //#define FIRE_MIN_KILLABLE			3		// If defined, only enemies >= N can be killed.
 //#define CAN_FIRE_UP 						// If defined, player can fire upwards and diagonal.
 #define MAX_AMMO					50		// If defined, ammo is not infinite!
-#define AMMO_REFILL 				20		// ammo refill, using tile 20 (hotspot #4)
+#define AMMO_REFILL 				25		// ammo refill, using tile 20 (hotspot #4)
 #define INITIAL_AMMO				5		// If defined, ammo = X when entering game.
 
 //#define BREAKABLE_WALLS 					// Breakable walls
@@ -275,9 +275,9 @@ extern unsigned char def_keys [0];
 #define KEYS_Y						1		// Keys counter character coordinates
 #define KILLED_X					99		//
 #define KILLED_Y					99		// Kills counter character coordinates
-#define AMMO_X						15		// 
+#define AMMO_X						13		// 
 #define AMMO_Y						1		// Ammo counter character coordinates
-#define TIMER_X 					9		//
+#define TIMER_X 					8		//
 #define TIMER_Y 					1		// Timer counter coordinates
 
 // Text
