@@ -32,10 +32,9 @@ HECHO
 POR HACER
 =========
 
-- tour de pantallas
-- comprobar joystick
+- mejorar sonido lava
 - música intro
 - música ingame
 - música gameover
-- testing final
+- testing final (comprobar joystick)
 - imagen promocional

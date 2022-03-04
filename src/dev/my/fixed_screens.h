@@ -30,7 +30,7 @@ void game_ending (void) {
 	#endif
 
 	cpc_UpdateNow (0);
-	AY_PLAY_MUSIC (0)
+	AY_PLAY_MUSIC (0);
 	espera_activa (500);
 	AY_STOP_SOUND ();
 }
@@ -42,7 +42,9 @@ void game_over (void) {
 	_x = 9; _y = 13; _gp_gen = " !           ! "; print_str ();
 	
 	cpc_UpdateNow (0);
+	AY_PLAY_MUSIC (3);
 	espera_activa (500);
+	AY_STOP_SOUND ();
 }
 
 #if defined(TIMER_ENABLE) && defined(SHOW_TIMER_OVER)

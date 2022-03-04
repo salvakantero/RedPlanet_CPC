@@ -5,7 +5,7 @@
 #define SFX_BREAKABLE_HIT 		1   // void
 #define SFX_BREAKABLE_BREAK 	2   // void
 #define SFX_PUSH_BOX 			3   // void
-#define SFX_OPEN_LOCK 			3   // void at source
+#define SFX_OPEN_LOCK 			3
 #define SFX_SHOOT 				4
 #define SFX_OBJECT_GET 			5
 #define SFX_KILL_ENEMY_STEP 	6

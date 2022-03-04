@@ -10,6 +10,8 @@ extern unsigned char *wyz_songs [0];
 		BINARY "../mus/01_ingame.mus.bin"
 	._02_none_mus_bin
 		BINARY "../mus/02_none.mus.bin"
+	._03_gameover_mus_bin
+		BINARY "../mus/03_gameover.mus.bin"
 	._wyz_songs
-		defw 	_00_title_mus_bin, _01_ingame_mus_bin, _02_none_mus_bin
+		defw 	_00_title_mus_bin, _01_ingame_mus_bin, _02_none_mus_bin, _03_gameover_mus_bin
 #endasm
