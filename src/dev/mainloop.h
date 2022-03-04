@@ -171,6 +171,7 @@ void main (void) {
 		#endif
 
 		level = 0;
+		muted = 0; //custom salva
 
 		// Here the title screen		
 		title_screen ();

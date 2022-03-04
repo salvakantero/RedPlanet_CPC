@@ -173,6 +173,15 @@ void run_script (unsigned char whichs) {
                                 ld  (hl), a
                         #endasm
                         break;
+                    case 0xE0:
+                        // SOUND sc_n
+                        // Opcode: E0 sc_n
+#ifdef MODE_128K
+                        wyz_play_sound (read_vbyte ());
+#else
+                        beep_fx (read_vbyte ());
+#endif
+                        break;
                     case 0xF1:
                         // WIN
                         script_result = 1;

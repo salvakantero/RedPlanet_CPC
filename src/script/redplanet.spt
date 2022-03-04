@@ -276,10 +276,7 @@ PRESS_FIRE AT SCREEN 29
 			9,6,17
 			10,6,17
 		END
-		
-		#SOUND 9
-		#SOUND 8
-		
+		SOUND 5
 		SET FLAG 2 = 1
 	END
 END

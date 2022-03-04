@@ -173,6 +173,12 @@ void run_script (unsigned char whichs) {
                                 ld  (hl), a
                         #endasm
                         break;
+                    case 0xE0:
+                        // SOUND sc_n
+                        // Opcode: E0 sc_n
+						// custom salva
+                        wyz_play_sound (read_vbyte ());
+                        break;
                     case 0xF1:
                         // WIN
                         script_result = 1;

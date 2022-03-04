@@ -31,7 +31,7 @@
 //#define PLAYER_FIN_X				99		//
 //#define PLAYER_FIN_Y				99		// Player tile coordinates to finish game
 //#define PLAYER_NUM_OBJETOS		25		// Objects to get to finish game
-#define PLAYER_LIFE 				99		// Max and starting life gauge.
+#define PLAYER_LIFE 				10		// Max and starting life gauge.
 #define PLAYER_REFILL				1		// Life recharge
 //#define PLAYER_DONT_LIMIT_LIFE			// PLAYER_LIFE isn't max.
 //#define COMPRESSED_LEVELS 				// use levels.h instead of mapa.h and enems.h (!)
@@ -133,7 +133,7 @@
 #define RESPAWN_ON_ENTER					// Enemies respawn when entering screen
 //#define FIRE_MIN_KILLABLE			3		// If defined, only enemies >= N can be killed.
 //#define CAN_FIRE_UP 						// If defined, player can fire upwards and diagonal.
-#define MAX_AMMO					99		// If defined, ammo is not infinite!
+#define MAX_AMMO					50		// If defined, ammo is not infinite!
 #define AMMO_REFILL 				20		// ammo refill, using tile 20 (hotspot #4)
 #define INITIAL_AMMO				5		// If defined, ammo = X when entering game.
 
