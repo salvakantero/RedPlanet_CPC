@@ -3,3 +3,13 @@ src/bin/loader.bin
 src/bin/redplanet.c.bin
 src/dev/redplanet.bin
 src/dev/redplanet.map
+src/bin/title.bin
+src/bin/work.bin
+src/bin/sprites.bin
+src/bin/sprites_extra.bin
+src/bin/sprites_bullet.bin
+src/bin/preloader.bin
+src/bin/loading.c.bin
+src/bin/loading.bin
+src/bin/font.bin
+src/bin/titlec.bin
