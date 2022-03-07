@@ -26,6 +26,12 @@ echo Convirtiendo mapa
 echo Convirtiendo enemigos/hotspots
 ..\utils\ene2h.exe ..\enems\enems.ene assets\enems.h
 
+echo Comprimiendo OGT
+..\utils\apultra.exe ..\mus\00_title.mus ..\mus\00_title.mus.bin
+..\utils\apultra.exe ..\mus\01_ingame.mus ..\mus\01_ingame.mus.bin
+..\utils\apultra.exe ..\mus\02_none.mus ..\mus\02_none.mus.bin
+..\utils\apultra.exe ..\mus\03_gameover.mus ..\mus\03_gameover.mus.bin
+
 if [%1]==[nogfx] goto :compile
 
 echo Importando GFX
