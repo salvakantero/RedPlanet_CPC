@@ -33,7 +33,6 @@ HECHO
 POR HACER
 =========
 
-- mejorar sonido lava
 - música intro
 - música ingame
 - música gameover

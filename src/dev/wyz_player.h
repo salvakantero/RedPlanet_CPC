@@ -124,17 +124,11 @@ void wyz_stop_sound (void) {
 				defb 0xFF	
 
 	;13 Puncho
-	EFECTO13:	DB $22, $EF
-				DB $01, $DF
-				DB $1F, $CF
-				DB $6F, $BF
-				DB $B7, $9F
-				DB $FE, $FF
+	EFECTO13:	DB $FE, $FF
 				DB $22, $EF
 				DB $01, $DF
 				DB $1F, $CF
 				DB $6F, $BF
-				DB $B7, $9F
 				DB $FF 
 
 	;14 Ser golpeado por enemigo		
