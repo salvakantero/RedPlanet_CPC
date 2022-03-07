@@ -25,9 +25,10 @@ HECHO
 18/02/22 - documentación
 19/02/22 - idiomas; ES-EN
 26/02/22 - decorations
-04/02/22 - sonidos FX
-04/02/22 - sonido al poner explosivos
-04/02/22 - graduación de dificultad
+04/03/22 - sonidos FX
+04/03/22 - sonido al poner explosivos
+04/03/22 - graduación de dificultad
+07/03/22 - imagen promocional
 
 POR HACER
 =========
@@ -37,4 +38,3 @@ POR HACER
 - música ingame
 - música gameover
 - testing final (comprobar joystick)
-- imagen promocional
