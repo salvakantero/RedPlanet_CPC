@@ -257,13 +257,13 @@
 			// Pause/Abort handling
 			if (cpc_TestKey (KEY_ENTER)) {
 				while (cpc_TestKey (KEY_ENTER));
-				isr_player_on = 0;
+				//isr_player_on = 0;
+				AY_PLAY_MUSIC(2); // muted
 				clear_sprites ();
-				//pause_screen ();
 				while (!cpc_TestKey (KEY_ENTER));
 				while (cpc_TestKey (KEY_ENTER));
-				//draw_scr ();
-				isr_player_on = 1;
+				//isr_player_on = 1;
+				AY_PLAY_MUSIC(1); // ingame music
 			}			
 			if (cpc_TestKey (KEY_ESC)) {
 				playing = 0;

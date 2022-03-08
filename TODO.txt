@@ -32,8 +32,10 @@ HECHO
 
 POR HACER
 =========
+- teclas M y ENTER disponibles con JOYSTICK
+- bajar volumen de algunos instrumentos
 
 - música intro
 - música ingame
 - música gameover
-- testing final (comprobar joystick)
+- testing final
