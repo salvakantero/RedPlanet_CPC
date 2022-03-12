@@ -1,6 +1,6 @@
 
 ; Tabla de instrumentos
-TABLA_PAUTAS: DW PAUTA_0,PAUTA_1,PAUTA_2,PAUTA_3,PAUTA_4,PAUTA_5
+TABLA_PAUTAS: DW PAUTA_0,PAUTA_1,PAUTA_2,PAUTA_3,PAUTA_4,0,0,0,0,0,0,0,0,PAUTA_13,PAUTA_14,PAUTA_15,0,0,0,0,PAUTA_20,PAUTA_21
 
 ; Tabla de efectos
 TABLA_SONIDOS: DW SONIDO0,SONIDO1,SONIDO2,SONIDO3
@@ -15,9 +15,17 @@ PAUTA_2:	DB	12,0,9,0,7,0,9,0,11,0,9,0,10,0,10,0,8,0,10,0,129
 ;Instrumento 'Flauta'
 PAUTA_3:	DB	10,0,12,0,13,0,13,0,13,0,12,0,11,0,11,0,11,0,10,0,10,0,10,0,10,0,10,0,9,0,9,0,9,0,9,0,9,0,138
 ;Instrumento 'Picc vol 2'
-PAUTA_4:	DB	71,0,6,0,7,0,6,0,5,0,129
-;Instrumento 'Eco'
-PAUTA_5:	DB	6,0,8,0,9,0,8,0,7,0,6,0,129
+PAUTA_4:	DB	73,0,8,0,9,0,8,0,7,0,129
+;Instrumento 'Eco Solo Guitar'
+PAUTA_13:	DB	70,0,6,0,6,0,5,0,5,0,5,0,5,0,5,0,4,0,4,0,4,0,4,0,4,0,4,0,3,0,3,0,3,0,3,0,3,0,3,0,2,0,2,0,2,0,1,0,129
+;Instrumento 'Slap Bass'
+PAUTA_14:	DB	45,0,12,4,11,-4,10,4,9,-5,10,0,129
+;Instrumento 'Robo'
+PAUTA_15:	DB	7,-1,23,5,23,9,6,0,22,5,22,9,5,0,21,5,21,9,4,0,20,5,20,9,6,0,22,5,22,9,131
+;Instrumento 'Onda'
+PAUTA_20:	DB	73,0,10,0,11,0,12,0,11,0,10,0,9,0,9,0,129
+;Instrumento 'Teeth'
+PAUTA_21:	DB	73,0,10,0,42,0,9,0,8,0,9,0,9,0,9,0,9,0,8,0,8,0,8,0,8,0,136
 
 ;Efectos
 ;Efecto 'bass drum'
