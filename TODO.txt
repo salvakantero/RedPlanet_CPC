@@ -30,11 +30,11 @@ HECHO
 04/03/22 - graduación de dificultad
 07/03/22 - imagen promocional
 08/03/22 - teclas M y ENTER disponibles con JOYSTICK
-08/03/22 - música intro
-08/03/22 - música gameover
+
 
 POR HACER
 =========
-
+- música intro
+- música gameover
 - música ingame
 - testing final
