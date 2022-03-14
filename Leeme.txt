@@ -2,8 +2,7 @@
 ==========
 RED PLANET
 ==========
-
-Amstrad CPC 464 - © salvaKantero 2015/22
+Versión Amstrad CPC - © 2015/2022
 
 Conduce a nuestro héroe al subsuelo de la antigua estación espacial para volar todo el complejo y acabar con sus malignos habitantes.
 Pero cuidado, el entorno es peligroso. 
@@ -54,6 +53,11 @@ M:      Música Sí/No.
 ENTER:  Pausa.
 ESC:    Cancelar partida.
 
+
+RED PLANET - Amstrad CPC
+========================
+salvakantero:   Programa, gráficos, SFX
+tacha:          Música
 
 La imagen de la pantalla de carga y la carátula se ha obtenido (con permiso de su autor) del original "Astronaut", de Michael Smith.
 Síguelo en twitter/instagram en @Doodlebags.

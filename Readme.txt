@@ -3,7 +3,7 @@
 RED PLANET
 ==========
 
-Amstrad CPC 464 - © salvaKantero 2015/22
+Amstrad CPC - © 2015/2022
 
 Lead our hero into the underground of the old space station to blow up the entire complex and wipe out its evil inhabitants.
 But beware, the environment is dangerous. 
@@ -59,8 +59,12 @@ ENTER:  Pause.
 ESC:    Cancel game.
 
 
+RED PLANET - Amstrad CPC
+========================
+salvaKantero:   Program, graphics, FX sounds
+tacha:          Music
+
 The image of the loading screen and the cover artwork  is taken (with permission of the author) from the original "Astronaut" by Michael Smith.
 Follow him on twitter/instagram at @Doodlebags.
 
 A very special thanks to the "Mojon Twins" for refining and sharing their MK1 game engine.
-

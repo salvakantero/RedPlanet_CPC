@@ -37,4 +37,6 @@ POR HACER
 - música intro
 - música gameover
 - música ingame
+- créditos de Sebastián
+- probar botón acción con joystick
 - testing final
