@@ -30,13 +30,13 @@ HECHO
 04/03/22 - graduación de dificultad
 07/03/22 - imagen promocional
 08/03/22 - teclas M y ENTER disponibles con JOYSTICK
-
+16/03/33 - créditos de Sebastián
 
 POR HACER
 =========
 - música intro
 - música gameover
 - música ingame
-- créditos de Sebastián
 - probar botón acción con joystick
 - testing final
+- generar formato DSK

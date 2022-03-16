@@ -56,7 +56,7 @@ ESC:    Cancelar partida.
 
 RED PLANET - Amstrad CPC
 ========================
-salvakantero:   Programa, gráficos, SFX
+salvaKantero:   Programa, GFX, SFX
 tacha:          Música
 
 La imagen de la pantalla de carga y la carátula se ha obtenido (con permiso de su autor) del original "Astronaut", de Michael Smith.
