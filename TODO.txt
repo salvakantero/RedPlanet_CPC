@@ -32,6 +32,7 @@ HECHO
 08/03/22 - teclas M y ENTER disponibles con JOYSTICK
 16/03/22 - créditos de Sebastián
 18/03/22 - créditos de Atila
+18/03/22 - logo pstcra
 
 POR HACER
 =========
