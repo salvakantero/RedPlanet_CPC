@@ -63,6 +63,7 @@ RED PLANET - Amstrad CPC
 ========================
 salvaKantero:   Program, GFX, SFX
 tacha:          Music
+Blackmores:     Betatesting
 
 The image of the loading screen and the cover artwork  is taken (with permission of the author) from the original "Astronaut" by Michael Smith.
 Follow him on twitter/instagram at @Doodlebags.

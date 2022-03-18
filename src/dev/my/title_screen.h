@@ -25,31 +25,42 @@ void title_screen (void) {
 		if (cpc_TestKey (KEY_AUX4)) { _gp_gen = def_keys_joy; break; }
 
 		// custom salva
-		if (ctr++ == 9000)
+		if (ctr++ == 10000)
 		{
-			_x = 5;
+			_x = 4;
 			_y = 5;
 
-			#ifdef ENGLISH_LANG
-			if (turn == 0)
-				_gp_gen = "PROGRAM BY SALVAKANTERO"; 
-			else if (turn == 1)
-				_gp_gen = "    MUSIC BY TACHA     ";
-			else
-				_gp_gen = " PRESS 1 OR 2 TO START ";
-			#else
-			if (turn == 0)
-				_gp_gen = "PROGRAMA: SALVAKANTERO"; 
-			else if (turn == 1)
-				_gp_gen = "     MUSICA: TACHA    ";
-			else
-				_gp_gen = "PULSA 1/2 PARA EMPEZAR";			
-			#endif
+			switch (turn)
+			{
+				#ifdef ENGLISH_LANG
+
+				case 0:
+					_gp_gen = "  GAME BY SALVAKANTERO "; break; 
+				case 1:
+					_gp_gen = "     MUSIC BY TACHA   "; break;
+				case 2:
+					_gp_gen = "BETATESTING BY BLACKMORES"; break;
+				case 3:
+					_gp_gen = "  PRESS 1 OR 2 TO START  ";
+				
+				#else
+
+				case 0:
+					_gp_gen = " PROGRAMA: SALVAKANTERO"; break; 
+				case 1:
+					_gp_gen = "      MUSICA: TACHA    "; break;
+				case 2:
+					_gp_gen = " BETATESTING: BLACKMORES"; break;
+				case 3:
+					_gp_gen = " PULSA 1/2 PARA EMPEZAR ";
+
+				#endif
+			}
 
 			print_str ();
 			cpc_UpdateNow (0);
 			ctr = 0;
-			if (turn++ == 2) turn = 0;
+			if (turn++ == 3) turn = 0;
 		}
 	}	
 	AY_STOP_SOUND ();

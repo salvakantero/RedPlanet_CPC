@@ -58,6 +58,7 @@ RED PLANET - Amstrad CPC
 ========================
 salvaKantero:   Programa, GFX, SFX
 tacha:          Música
+Blackmores:     Betatesting
 
 La imagen de la pantalla de carga y la carátula se ha obtenido (con permiso de su autor) del original "Astronaut", de Michael Smith.
 Síguelo en twitter/instagram en @Doodlebags.

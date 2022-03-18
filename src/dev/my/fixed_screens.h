@@ -31,7 +31,7 @@ void game_ending (void) {
 
 	cpc_UpdateNow (0);
 	AY_PLAY_MUSIC (0);
-	espera_activa (400);
+	espera_activa (500);
 	AY_STOP_SOUND ();
 }
 
@@ -43,7 +43,7 @@ void game_over (void) {
 	
 	cpc_UpdateNow (0);
 	AY_PLAY_MUSIC (3);
-	espera_activa (400);
+	espera_activa (300);
 	AY_STOP_SOUND ();
 }
 
