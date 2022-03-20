@@ -9,7 +9,7 @@ TABLA_SONIDOS: DW SONIDO0,SONIDO1,SONIDO2,SONIDO3
 ;Instrumento 'Piano'
 PAUTA_0:	DB	47,0,15,0,13,0,11,0,4,0,129
 ;Instrumento 'PICC'
-PAUTA_1:	DB	72,0,9,0,9,0,8,0,8,0,7,0,7,0,5,0,1,0,129
+PAUTA_1:	DB	74,0,11,0,10,0,9,0,8,0,7,0,7,0,5,0,1,0,129
 ;Instrumento 'Flauta vol bajo'
 PAUTA_2:	DB	12,0,9,0,7,0,9,0,11,0,9,0,10,0,10,0,8,0,10,0,129
 ;Instrumento 'Flauta'

@@ -7,15 +7,14 @@
 
 #ifndef MODE_128K
 	extern unsigned char s_title [];
-	//extern unsigned char s_marco [];
-	//extern unsigned char s_ending [];
+	extern unsigned char s_marco [];
+	extern unsigned char s_ending [];
 
 	#asm
 		._s_title
 			BINARY "../bin/titlec.bin"
 		._s_marco
 	#endasm
-	/* custom salva
 	#ifndef DIRECT_TO_PLAY
 		#asm
 				BINARY "../bin/marcoc.bin"
@@ -24,7 +23,7 @@
 	#asm
 		._s_ending
 			BINARY "../bin/endingc.bin"
-	#endasm */
+	#endasm
 #endif
 
 void blackout (void) {

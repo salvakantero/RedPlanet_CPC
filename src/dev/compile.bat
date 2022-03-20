@@ -45,11 +45,11 @@ echo Importando GFX
 
 ..\utils\mkts_om.exe platform=cpc cpcmode=%cpc_gfx_mode% pal=..\gfx\pal.png mode=superbuffer in=..\gfx\title.png out=..\bin\title.bin silent > nul
 rem ..\utils\mkts_om.exe platform=cpc cpcmode=%cpc_gfx_mode% pal=..\gfx\pal.png mode=superbuffer in=..\gfx\marco.png out=..\bin\marco.bin silent > nul
-rem ..\utils\mkts_om.exe platform=cpc cpcmode=%cpc_gfx_mode% pal=..\gfx\pal.png mode=superbuffer in=..\gfx\ending.png out=..\bin\ending.bin silent > nul
+..\utils\mkts_om.exe platform=cpc cpcmode=%cpc_gfx_mode% pal=..\gfx\pal.png mode=superbuffer in=..\gfx\ending.png out=..\bin\ending.bin silent > nul
 
 ..\utils\apultra.exe ..\bin\title.bin ..\bin\titlec.bin > nul
 rem ..\utils\apultra.exe ..\bin\marco.bin ..\bin\marcoc.bin > nul
-rem ..\utils\apultra.exe ..\bin\ending.bin ..\bin\endingc.bin > nul
+..\utils\apultra.exe ..\bin\ending.bin ..\bin\endingc.bin > nul
 
 rem ..\utils\mkts_om.exe platform=cpc mode=pals in=..\gfx\pal.png prefix=my_inks out=assets\pal.h silent > nul
 
