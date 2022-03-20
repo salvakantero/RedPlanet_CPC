@@ -33,6 +33,7 @@ HECHO
 16/03/22 - créditos de Sebastián
 18/03/22 - créditos de Atila
 18/03/22 - logo pstcra
+19/03/22 - pantalla final
 
 POR HACER
 =========
@@ -40,6 +41,5 @@ POR HACER
 - música gameover
 - música ingame
 
-- probar botón acción con joystick
 - testing final
 - generar formato DSK
