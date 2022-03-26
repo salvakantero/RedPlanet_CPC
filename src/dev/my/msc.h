@@ -177,7 +177,7 @@ void run_script (unsigned char whichs) {
                         // SOUND sc_n
                         // Opcode: E0 sc_n
 						// custom salva
-                        wyz_play_sound (read_vbyte ());
+                        AY_PLAY_SOUND (read_vbyte ());
                         break;
                     case 0xF1:
                         // WIN
