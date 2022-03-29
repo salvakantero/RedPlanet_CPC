@@ -8,54 +8,45 @@
      
     ; Tabla de instrumentos 
     .TABLA_PAUTAS
-        defw PAUTA_0,PAUTA_1,PAUTA_2,PAUTA_3,PAUTA_4,PAUTA_5,PAUTA_6,PAUTA_7,PAUTA_8 
+        defw PAUTA_0,PAUTA_1,PAUTA_2,PAUTA_3,PAUTA_4,PAUTA_5 
      
     ; Tabla de efectos 
     .TABLA_SONIDOS
         defw SONIDO0,SONIDO1,SONIDO2,SONIDO3 
      
     ;Pautas (instrumentos) 
-    ;Instrumento 'Harmonica' 
+    ;Instrumento 'Piano' 
     .PAUTA_0
-        defb 42,0,7,0,4,0,4,0,4,0,0,0,0,129 
-    ;Instrumento 'LEAD' 
+        defb 47,0,15,0,13,0,11,0,4,0,129 
+    ;Instrumento 'PICC' 
     .PAUTA_1
-        defb 75,0,7,0,39,0,9,0,8,0,7,0,7,0,7,1,7,1,7,1,7,1,7,0,7,0,7,-1,7,-1,7,-1,7,-1,7,0,7,0,140 
-    ;Instrumento 'chip1' 
+        defb 76,0,13,0,12,0,11,0,10,0,8,0,7,0,5,0,1,0,129 
+    ;Instrumento 'Flauta vol bajo' 
     .PAUTA_2
-        defb 77,0,9,0,42,0,9,0,9,1,8,0,129 
-    ;Instrumento 'LEAD 2' 
+        defb 12,0,9,0,7,0,9,0,11,0,9,0,10,0,10,0,8,0,10,0,129 
+    ;Instrumento 'Flauta' 
     .PAUTA_3
-        defb 72,-18,8,6,8,6,8,6,8,0,7,0,7,0,6,-1,6,-1,6,0,6,0,6,0,6,1,6,1,6,0,6,0,6,0,138 
-    ;Instrumento 'Onda2' 
+        defb 10,0,12,0,13,0,13,0,13,0,12,0,11,0,11,0,11,0,10,0,10,0,10,0,10,0,10,0,9,0,9,0,9,0,9,0,9,0,138 
+    ;Instrumento 'Picc vol 2' 
     .PAUTA_4
-        defb 75,0,10,0,9,0,9,0,8,0,6,0,129 
-    ;Instrumento 'Chip2' 
+        defb 71,0,6,0,7,0,6,0,5,0,129 
+    ;Instrumento 'Eco' 
     .PAUTA_5
-        defb 75,0,8,0,39,0,5,0,4,0,3,0,129 
-    ;Instrumento 'locura' 
-    .PAUTA_6
-        defb 42,-31,9,31,8,-31,7,31,6,-12,6,12,130 
-    ;Instrumento 'Bajo v2' 
-    .PAUTA_7
-        defb 77,0,44,0,11,0,10,0,8,0,8,0,8,0,8,0,8,0,8,0,7,0,7,0,7,0,7,0,6,0,129 
-    ;Instrumento 'Chip2' 
-    .PAUTA_8
-        defb 72,0,6,0,37,0,4,0,4,0,3,0,129 
+        defb 6,0,8,0,9,0,8,0,7,0,6,0,129 
      
     ;Efectos 
     ;Efecto 'bass drum' 
     .SONIDO0
-        defb 194,63,0,46,89,0,208,121,0,255 
-    ;Efecto 'SNARE' 
+        defb 209,62,0,186,92,0,255 
+    ;Efecto 'drum' 
     .SONIDO1
-        defb 168,15,31,23,56,5,232,58,3,0,9,2,0,8,1,0,7,1,255 
-    ;Efecto 'H' 
+        defb 139,46,0,232,43,8,255 
+    ;Efecto 'hithat' 
     .SONIDO2
-        defb 1,10,1,255 
+        defb 0,11,1,0,6,1,255 
     ;Efecto 'bass drum vol 2' 
     .SONIDO3
-        defb 186,57,0,0,102,0,162,131,0,255 
+        defb 186,58,0,0,102,0,162,131,0,255 
      
     ;Frecuencias para las notas 
 #endasm

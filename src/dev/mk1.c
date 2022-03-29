@@ -102,7 +102,7 @@
 
 #ifdef SOUND_WYZ
 	// custom salva
-	//#include "my/wyz/efectos.h"
+	#include "my/wyz/efectos.h"
 	#include "my/wyz/instrumentos.h"
 	#include "my/wyz/songs.h"
 	#include "wyz_player.h"
