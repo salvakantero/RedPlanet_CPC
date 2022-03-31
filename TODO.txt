@@ -37,6 +37,11 @@ HECHO
 
 POR HACER
 =========
+- créditos MK
+- pantalla de carga MK
+- pantalla de ending MK
+- imagen promo con portada de MK
+
 - música intro
 - música gameover
 - música ingame
