@@ -39,8 +39,10 @@ void title_screen (void) {
 				case 1:
 					_gp_gen = "     MUSIC BY TACHA   "; break;
 				case 2:
-					_gp_gen = "BETATESTING BY BLACKMORES"; break;
+					_gp_gen = "  COVER BY MASTERKLOWN"; break;
 				case 3:
+					_gp_gen = "BETATESTING BY BLACKMORES"; break;
+				case 4:
 					_gp_gen = "  PRESS 1 OR 2 TO START  ";
 				
 				#else
@@ -50,8 +52,10 @@ void title_screen (void) {
 				case 1:
 					_gp_gen = "      MUSICA: TACHA    "; break;
 				case 2:
-					_gp_gen = " BETATESTING: BLACKMORES"; break;
+					_gp_gen = "  PORTADA: MASTERKLOWN"; break;
 				case 3:
+					_gp_gen = " BETATESTING: BLACKMORES"; break;
+				case 4:
 					_gp_gen = " PULSA 1/2 PARA EMPEZAR ";
 
 				#endif
@@ -60,7 +64,7 @@ void title_screen (void) {
 			print_str ();
 			cpc_UpdateNow (0);
 			ctr = 0;
-			if (turn++ == 3) turn = 0;
+			if (turn++ == 4) turn = 0;
 		}
 	}	
 	AY_STOP_SOUND ();

@@ -34,10 +34,10 @@ HECHO
 18/03/22 - créditos de Atila
 18/03/22 - logo pstcra
 19/03/22 - pantalla final
+31/03/22 - créditos de masterklown
 
 POR HACER
 =========
-- créditos MK
 - pantalla de carga MK
 - pantalla de ending MK
 - imagen promo con portada de MK
