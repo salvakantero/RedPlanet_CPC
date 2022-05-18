@@ -718,21 +718,21 @@ unsigned char player_move (void) {
 		
 		sp_sw [SP_PLAYER].sp0 = (int) (sm_sprptr [gpit]);
 	#else
-			
+		sp_printed = 0;	
 		if (!possee && !p_gotten) {			
 			gpit = p_facing ? 3 : 7;
 		} else {
 			gpit = p_facing ? 0 : 4;
 			if (p_vx == 0) {
-				//++ gpit;
 				// custom salva (player breathing)
+				//++ gpit;
 				if (breath_ct++ < 6)
 				{
 					sp_printed = 1;
 					if (gpit) 
-						sp_sw [SP_PLAYER].sp0 = (unsigned int) (sprite_19_a);
+						sp_sw [SP_PLAYER].sp0 = (unsigned int) (sprite_17_a);
 					else 
-						sp_sw [SP_PLAYER].sp0 = (unsigned int) (sprite_19_a);
+						sp_sw [SP_PLAYER].sp0 = (unsigned int) (sprite_17_a);
 				}
 				else if (breath_ct < 11)
 					++ gpit;
@@ -745,7 +745,7 @@ unsigned char player_move (void) {
 			}			
 		}
 
-		if (!sp_printed)
+		if (sp_printed == 0)
 			sp_sw [SP_PLAYER].sp0 = (int) (sm_sprptr [gpit]);
 	#endif
 
