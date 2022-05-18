@@ -325,3 +325,4 @@ unsigned char isr_player_on;
 // custom salva
 unsigned char last_pal = 1;
 unsigned char muted = 0;
+unsigned char breath_ct = 0, sp_printed;
