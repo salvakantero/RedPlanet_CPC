@@ -724,8 +724,9 @@ unsigned char player_move (void) {
 		} else {
 			gpit = p_facing ? 0 : 4;
 			if (p_vx == 0) {
+				++gpit;
 				// custom salva (player breathing)
-				if (breath_ct++ < 6)
+				if (breath_ct++ < 10)
 				{
 					sp_printed = 1;
 					if (gpit) 
@@ -733,8 +734,8 @@ unsigned char player_move (void) {
 					else 
 						sp_sw [SP_PLAYER].sp0 = (unsigned int) (sprite_20_a);
 				}
-				else if (breath_ct < 11)
-					++ gpit;
+				else if (breath_ct < 19) {}
+					//++ gpit;
 				else
 					breath_ct = 0;
 			} else {
