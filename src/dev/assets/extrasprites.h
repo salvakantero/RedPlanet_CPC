@@ -3,7 +3,7 @@
 
 // Extrasprites.h
 // Contiene sprites extra para el modo de matar enemigos de la churrera
-// Sólo se incluirá (tras los sprites) si se define PLAYER_STEPS_ON_ENEMIES
+// Sï¿½lo se incluirï¿½ (tras los sprites) si se define PLAYER_STEPS_ON_ENEMIES
 // Copyleft 2010 The Mojon Twins
 
 // Frames extra por si se pueden eliminar los enemigos:
@@ -40,3 +40,13 @@ extern unsigned char sprite_18_a [];
 
 #define SPRFR_EXPL  sprite_17_a
 #define SPRFR_EMPTY sprite_18_a
+
+extern unsigned char sprite_20_a []; 
+extern unsigned char sprite_21_a []; 
+
+	#asm
+		._sprite_20_a
+			BINARY "../bin/sprites_extra2.bin"
+		._sprite_21_a
+			BINARY "../bin/sprites_extra3.bin"
+	#endasm
