@@ -725,6 +725,7 @@ unsigned char player_move (void) {
 			gpit = p_facing ? 0 : 4;
 			if (p_vx == 0) {
 				++gpit;
+
 				// custom salva (player breathing)
 				if (breath_ct++ < 10)
 				{
@@ -736,6 +737,7 @@ unsigned char player_move (void) {
 				}
 				else if (breath_ct == 20)
 					breath_ct = 0;
+					
 			} else {
 				rda = ((gpx + 4) >> 3) & 3;
 				if (rda == 3) rda = 1;
