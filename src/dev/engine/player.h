@@ -729,14 +729,12 @@ unsigned char player_move (void) {
 				if (breath_ct++ < 10)
 				{
 					sp_printed = 1;
-					if (gpit) 
+					if (p_facing == 0) 
 						sp_sw [SP_PLAYER].sp0 = (unsigned int) (sprite_21_a);
 					else 
 						sp_sw [SP_PLAYER].sp0 = (unsigned int) (sprite_20_a);
 				}
-				else if (breath_ct < 19) {}
-					//++ gpit;
-				else
+				else if (breath_ct == 20)
 					breath_ct = 0;
 			} else {
 				rda = ((gpx + 4) >> 3) & 3;
