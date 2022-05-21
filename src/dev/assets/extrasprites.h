@@ -41,6 +41,7 @@ extern unsigned char sprite_18_a [];
 #define SPRFR_EXPL  sprite_17_a
 #define SPRFR_EMPTY sprite_18_a
 
+// custom salva
 extern unsigned char sprite_20_a []; 
 extern unsigned char sprite_21_a []; 
 
