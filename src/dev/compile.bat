@@ -61,7 +61,6 @@ if [%1]==[justassets] goto :end
 echo Generating LUTs
 ..\utils\pasmo.exe assets\cpc_TrPixLutM%cpc_gfx_mode%.asm assets\trpixlut.bin
 ..\utils\apultra.exe assets\trpixlut.bin assets\trpixlutc.bin
-rem ..\utils\wyzTrackerParser.exe ..\mus\instrumentos.asm assets\instrumentos.h
 ..\utils\wyzTrackerParser.exe ..\mus\instrumentos.asm my\wyz\instrumentos.h
 
 echo Compilando guego
