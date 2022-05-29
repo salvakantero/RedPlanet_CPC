@@ -35,6 +35,7 @@ HECHO
 18/03/22 - logo pstcra
 19/03/22 - pantalla final
 31/03/22 - créditos de masterklown
+29/05/22 - manuales MK
 
 POR HACER
 =========

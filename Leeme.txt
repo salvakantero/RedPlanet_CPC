@@ -58,7 +58,7 @@ RED PLANET - Amstrad CPC
 ========================
 salvaKantero:   Programa, GFX, SFX
 tacha:          Música
-masterklown:    Portada
+masterklown:    Ilustración de portada
 blackmores:     Betatesting
 
 Un agradecimiento muy especial a los "Mojon Twins" por perfeccionar y compartir su motor de juegos MK1.
