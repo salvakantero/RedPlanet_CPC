@@ -36,16 +36,17 @@ HECHO
 19/03/22 - pantalla final
 31/03/22 - créditos de masterklown
 29/05/22 - manuales MK
+30/05/22 - pantalla de carga MK
+30/05/22 - música gameover
+30/05/22 - música ingame
 
 POR HACER
 =========
-- pantalla de carga MK
+- pantalla de menú MK
 - pantalla de ending MK
 - imagen promo con portada de MK
 
 - música intro
-- música gameover
-- música ingame
 
 - testing final
 - generar formato DSK

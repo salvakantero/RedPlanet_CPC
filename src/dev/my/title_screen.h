@@ -25,26 +25,26 @@ void title_screen (void) {
 		if (cpc_TestKey (KEY_AUX4)) { _gp_gen = def_keys_joy; break; }
 
 		// custom salva
-		if (ctr++ == 10000)
+		if (ctr++ == 12000)
 		{
 			_x = 4;
-			_y = 5;
+			_y = 23;
 
 			switch (turn)
 			{
 				#ifdef ENGLISH_LANG
 
 				case 0:
-					_gp_gen = "  GAME BY SALVAKANTERO "; break; 
+					_gp_gen = "1: KEYBOARD  2: JOYSTICK "; break;
 				case 1:
-					_gp_gen = "     MUSIC BY TACHA   "; break;
+					_gp_gen = "  GAME BY SALVAKANTERO  "; break; 
 				case 2:
-					_gp_gen = "  COVER BY MASTERKLOWN"; break;
+					_gp_gen = "     MUSIC BY TACHA   "; break;
 				case 3:
-					_gp_gen = "BETATESTING BY BLACKMORES"; break;
+					_gp_gen = "  COVER BY MASTERKLOWN"; break;
 				case 4:
-					_gp_gen = "  PRESS 1 OR 2 TO START  ";
-				
+					_gp_gen = "BETATESTING BY BLACKMORES";
+
 				#else
 
 				case 0:
