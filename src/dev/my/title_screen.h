@@ -5,7 +5,7 @@
 
 void title_screen (void) {
 	// custom salva
-	unsigned int ctr = 9000;
+	unsigned int ctr = 12000;
 	unsigned char turn = 0;
 
 	blackout ();
@@ -48,15 +48,15 @@ void title_screen (void) {
 				#else
 
 				case 0:
-					_gp_gen = " PROGRAMA: SALVAKANTERO"; break; 
+					_gp_gen = "1: TECLADO   2: JOYSTICK"; break;
 				case 1:
-					_gp_gen = "      MUSICA: TACHA    "; break;
+					_gp_gen = " PROGRAMA: SALVAKANTERO"; break; 
 				case 2:
-					_gp_gen = "  PORTADA: MASTERKLOWN"; break;
+					_gp_gen = "      MUSICA: TACHA    "; break;
 				case 3:
-					_gp_gen = " BETATESTING: BLACKMORES"; break;
+					_gp_gen = "  PORTADA: MASTERKLOWN"; break;
 				case 4:
-					_gp_gen = " PULSA 1/2 PARA EMPEZAR ";
+					_gp_gen = " BETATESTING: BLACKMORES";
 
 				#endif
 			}
@@ -77,4 +77,9 @@ void title_screen (void) {
 			ld  bc, 24
 			ldir
 	#endasm
+
+	// custom salva (clean messages)
+	_gp_gen = "                         ";
+	print_str ();
+	cpc_UpdateNow (0);
 }
