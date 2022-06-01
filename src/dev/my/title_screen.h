@@ -24,12 +24,12 @@ void title_screen (void) {
 		if (cpc_TestKey (KEY_AUX3)) { _gp_gen = def_keys; break; }
 		if (cpc_TestKey (KEY_AUX4)) { _gp_gen = def_keys_joy; break; }
 
+			_x = 4;
+			_y = 23;
+			
 		// custom salva
 		if (ctr++ == 12000)
 		{
-			_x = 4;
-			_y = 23;
-
 			switch (turn)
 			{
 				#ifdef ENGLISH_LANG
@@ -69,7 +69,7 @@ void title_screen (void) {
 	#endasm
 
 	// custom salva (clean messages)
-	_gp_gen = "                        ";
+	_gp_gen = "                         ";
 	print_str ();
 	cpc_UpdateNow (0);
 }
