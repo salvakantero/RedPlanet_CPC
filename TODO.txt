@@ -39,10 +39,10 @@ HECHO
 30/05/22 - pantalla de carga MK
 30/05/22 - música gameover
 30/05/22 - música ingame
+02/06/22 - pantalla de menú MK
 
 POR HACER
 =========
-- pantalla de menú MK
 - pantalla de ending MK
 - imagen promo con portada de MK
 

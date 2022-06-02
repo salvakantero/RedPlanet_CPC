@@ -44,7 +44,7 @@ void title_screen (void) {
 
 				case 0:	_gp_gen = "1: TECLADO   2: JOYSTICK"; break;
 				case 1:	_gp_gen = " PROGRAMA: SALVAKANTERO "; break; 
-				case 2:	_gp_gen = "      MUSICA: TACHA    "; break;
+				case 2:	_gp_gen = "     MUSICA: TACHA     "; break;
 				case 3:	_gp_gen = "  PORTADA: MASTERKLOWN"; break;
 				case 4:	_gp_gen = " BETATESTING: BLACKMORES";
 
