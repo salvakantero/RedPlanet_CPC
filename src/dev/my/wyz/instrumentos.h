@@ -8,7 +8,7 @@
      
     ; Tabla de instrumentos 
     .TABLA_PAUTAS
-        defw PAUTA_0,PAUTA_1,PAUTA_2,PAUTA_3,PAUTA_4,PAUTA_5,PAUTA_6,PAUTA_7,PAUTA_8,PAUTA_9,PAUTA_10,PAUTA_11 
+        defw PAUTA_0,PAUTA_1,PAUTA_2,PAUTA_3,PAUTA_4,PAUTA_5,PAUTA_6,PAUTA_7,PAUTA_8,PAUTA_9,PAUTA_10,PAUTA_11,PAUTA_12,PAUTA_13,PAUTA_14,PAUTA_15,PAUTA_16 
      
     ; Tabla de efectos 
     .TABLA_SONIDOS
@@ -17,57 +17,72 @@
     ;Pautas (instrumentos) 
     ;Instrumento 'BASS' 
     .PAUTA_0
-        defb 75,0,43,0,10,0,9,0,8,0,8,0,8,0,8,0,8,0,8,0,7,4,7,4,7,4,7,4,7,4,7,4,7,4,7,4,7,4,7,4,138 
+        defb 73,0,41,0,8,0,7,0,6,0,6,0,6,0,6,0,6,0,6,0,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,138 
     ;Instrumento 'FX1' 
     .PAUTA_2
-        defb 41,0,9,0,129 
+        defb 39,0,7,0,129 
     ;Instrumento 'FX2' 
     .PAUTA_1
-        defb 41,6,9,0,129 
+        defb 39,6,7,0,129 
     ;Instrumento 'FX3' 
     .PAUTA_3
-        defb 41,-6,9,0,129 
+        defb 39,-6,7,0,129 
     ;Instrumento 'BASS' 
     .PAUTA_4
-        defb 15,-31,9,31,8,31,8,31,8,31,8,31,8,31,0,129 
+        defb 11,31,8,31,7,31,6,31,5,31,5,31,4,31,0,30,0,129 
     ;Instrumento 'AD_01' 
     .PAUTA_5
-        defb 11,0,10,0,10,0,9,0,9,0,129 
+        defb 9,0,8,0,8,0,7,0,7,0,129 
     ;Instrumento 'LEAD_01' 
     .PAUTA_6
-        defb 73,-18,8,6,8,6,7,6,7,0,7,0,7,0,6,-1,6,-1,6,0,6,0,6,0,6,1,6,1,6,0,6,0,6,0,138 
+        defb 72,-18,8,6,7,6,7,6,6,0,6,0,6,0,6,-1,6,-1,6,0,6,0,6,0,6,1,6,1,6,0,6,0,6,0,138 
     ;Instrumento 'Nuevo' 
     .PAUTA_7
-        defb 74,0,42,0,73,0,41,0,72,0,40,0,0,129 
+        defb 72,0,40,0,71,0,39,0,70,0,38,0,0,129 
     ;Instrumento 'SYNTH2' 
     .PAUTA_8
-        defb 75,0,43,0,70,0,38,0,71,0,39,0,70,9,38,0,130 
+        defb 74,0,42,0,69,0,37,0,70,0,38,0,68,9,36,0,130 
     ;Instrumento 'SYNTH3' 
     .PAUTA_9
-        defb 74,0,42,0,72,0,40,0,0,129 
+        defb 73,0,41,0,71,0,39,0,0,129 
     ;Instrumento 'SYNTH4' 
     .PAUTA_10
-        defb 73,0,41,0,0,0,0,129 
+        defb 72,0,40,0,0,0,0,129 
     ;Instrumento 'BASS2' 
     .PAUTA_11
-        defb 75,0,43,0,10,0,9,0,8,0,8,0,8,0,8,0,8,0,6,0,129 
+        defb 73,0,41,0,8,0,7,0,6,0,6,0,6,0,6,0,6,0,4,0,129 
+    ;Instrumento 'CH_min' 
+    .PAUTA_12
+        defb 22,0,22,3,21,7,21,0,21,3,21,7,20,0,20,3,20,7,131 
+    ;Instrumento 'LEAD_vol_2' 
+    .PAUTA_13
+        defb 69,-18,5,6,4,6,4,6,4,0,4,0,4,0,3,-1,3,-1,3,0,3,0,3,0,3,1,3,1,3,0,3,0,3,0,138 
+    ;Instrumento 'CH_maj' 
+    .PAUTA_14
+        defb 22,0,22,4,21,7,21,0,21,4,21,7,20,0,20,4,20,7,131 
+    ;Instrumento 'LEAD_vol_3' 
+    .PAUTA_15
+        defb 67,-18,2,6,1,6,1,6,1,0,129 
+    ;Instrumento 'Nuevo' 
+    .PAUTA_16
+        defb 8,0,8,0,8,0,8,0,8,0,0,129 
      
     ;Efectos 
     ;Efecto 'KICK' 
     .SONIDO0
-        defb 176,31,22,185,62,0,255,77,0,255 
+        defb 176,28,22,185,44,0,255,59,0,255 
     ;Efecto 'SNARE' 
     .SONIDO1
-        defb 49,47,13,101,43,5,110,43,13,145,41,21,168,54,23,170,53,27,255 
+        defb 49,26,16,101,25,5,110,25,13,145,25,19,168,40,23,170,54,27,255 
     ;Efecto 's' 
     .SONIDO2
-        defb 37,29,14,184,26,1,0,0,0,53,45,15,184,26,2,106,56,18,255 
+        defb 37,25,2,0,0,0,27,24,8,0,0,0,30,25,11,0,0,0,31,24,4,255 
     ;Efecto 'H' 
     .SONIDO3
-        defb 15,13,23,16,11,9,14,10,6,0,8,2,0,7,3,0,7,3,0,6,3,0,5,3,7,4,2,7,4,1,3,4,2,0,3,2,255 
+        defb 4,10,23,4,8,9,4,7,6,0,5,2,0,4,3,0,3,3,255 
     ;Efecto 'h' 
     .SONIDO4
-        defb 13,12,3,0,6,2,255 
+        defb 13,7,3,0,3,2,255 
      
     ;Frecuencias para las notas 
 #endasm

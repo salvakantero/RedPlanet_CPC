@@ -40,13 +40,11 @@ HECHO
 30/05/22 - música gameover
 30/05/22 - música ingame
 02/06/22 - pantalla de menú MK
+04/06/22 - pantalla de ending MK (textos)
+04/06/22 - música intro
 
 POR HACER
 =========
-- pantalla de ending MK
 - imagen promo con portada de MK
-
-- música intro
-
 - testing final
 - generar formato DSK
