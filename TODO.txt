@@ -42,9 +42,9 @@ HECHO
 02/06/22 - pantalla de menú MK
 04/06/22 - pantalla de ending MK (textos)
 04/06/22 - música intro
+04/06/22 - imagen promo con portada de MK
 
 POR HACER
 =========
-- imagen promo con portada de MK
 - testing final
 - generar formato DSK
