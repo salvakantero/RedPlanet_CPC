@@ -35,18 +35,20 @@ void title_screen (void) {
 				#ifdef ENGLISH_LANG
 
 				case 0: _gp_gen = "1: KEYBOARD  2: JOYSTICK "; break;
-				case 1:	_gp_gen = "  GAME BY SALVAKANTERO  "; break; 
-				case 2: _gp_gen = "     MUSIC BY TACHA   "; break;
-				case 3:	_gp_gen = "  COVER BY MASTERKLOWN"; break;
-				case 4:	_gp_gen = "BETATESTING BY BLACKMORES";
+				case 1: _gp_gen = "  -PLAY ON RETRO-  2022 "; break;
+				case 2:	_gp_gen = "  GAME BY SALVAKANTERO "; break; 
+				case 3: _gp_gen = "     MUSIC BY TACHA   "; break;
+				case 4:	_gp_gen = "  COVER BY MASTERKLOWN"; break;
+				case 5:	_gp_gen = "BETATESTING BY BLACKMORES";
 
 				#else
 
 				case 0:	_gp_gen = "1: TECLADO   2: JOYSTICK"; break;
-				case 1:	_gp_gen = " PROGRAMA: SALVAKANTERO "; break; 
-				case 2:	_gp_gen = "      MUSICA: TACHA    "; break;
-				case 3:	_gp_gen = "  PORTADA: MASTERKLOWN"; break;
-				case 4:	_gp_gen = " BETATESTING: BLACKMORES";
+				case 1: _gp_gen = "  -PLAY ON RETRO-  2022 "; break;
+				case 2:	_gp_gen = " PROGRAMA: SALVAKANTERO "; break; 
+				case 3:	_gp_gen = "      MUSICA: TACHA    "; break;
+				case 4:	_gp_gen = "  PORTADA: MASTERKLOWN"; break;
+				case 5:	_gp_gen = " BETATESTING: BLACKMORES";
 
 				#endif
 			}
@@ -54,7 +56,7 @@ void title_screen (void) {
 			print_str ();
 			cpc_UpdateNow (0);
 			ctr = 0;
-			if (turn++ == 4) turn = 0;
+			if (turn++ == 5) turn = 0;
 		}
 	}	
 	AY_STOP_SOUND ();
