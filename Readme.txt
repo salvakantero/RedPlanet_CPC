@@ -3,7 +3,7 @@
 RED PLANET
 ==========
 
-Amstrad CPC - © 2015/2022
+Amstrad CPC version - © PLAY ON RETRO 2022
 
 Lead our hero into the underground of the old space station to blow up the entire complex and wipe out its evil inhabitants.
 But beware, the environment is dangerous. 
