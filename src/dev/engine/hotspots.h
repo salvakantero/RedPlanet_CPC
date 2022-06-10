@@ -33,7 +33,8 @@ void hotspots_do (void) {
 					#else
 						++ p_objs;
 						#ifdef OBJECT_COUNT
-							flags [OBJECT_COUNT] = p_objs;
+							flags[OBJECT_COUNT] = p_objs;
+							game_percent += 4; // custom salva							
 						#endif
 
 						AY_PLAY_SOUND (SFX_OBJECT_GET);
@@ -56,6 +57,7 @@ void hotspots_do (void) {
 			#ifndef DEACTIVATE_KEYS
 				case 2:
 					p_keys ++;
+					game_percent += 5; // custom salva		
 					AY_PLAY_SOUND (SFX_KEY_GET);
 					break;
 			#endif

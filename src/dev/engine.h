@@ -115,7 +115,7 @@ void espera_activa (int espera) {
 				}
 				_x = x0; _y = y0; _t = 0; _n = 0; update_tile ();
 				-- p_keys;
-		
+				game_percent += 5; // custom salva		
 				AY_PLAY_SOUND (SFX_OPEN_LOCK);
 				
 				#include "my/ci/on_unlocked_bolt.h"
@@ -541,182 +541,184 @@ void draw_scr (void) {
 	{
 #ifdef ENGLISH_LANG
 		case 0:
-			_gp_gen = "!!!!!!!_CONTROL_CENTRE_!!!!!!!";
+			_gp_gen = "!!!!!_CONTROL_CENTRE_!!!!! /";
 			break;
 		case 1:
-			_gp_gen = "!!!!!!!_SUPPLY_DEPOT_1_!!!!!!!";
+			_gp_gen = "!!!!!_SUPPLY_DEPOT_1_!!!!!";
 			break;
 		case 2:
-			_gp_gen = "!!!!_CENTRAL_HALL_LEVEL_0_!!!!";
+			_gp_gen = "!!_CENTRAL_HALL_LEVEL_0_!!";
 			break;
 		case 3:
-			_gp_gen = "!!!_TOXIC_WASTE_STORAGE_1A_!!!";
+			_gp_gen = "!_TOXIC_WASTE_STORAGE_1A_!";
 			break;
 		case 4:
-			_gp_gen = "!!!_TOXIC_WASTE_STORAGE_1B_!!!";
+			_gp_gen = "!_TOXIC_WASTE_STORAGE_1B_!";
 			break;
 		case 5:
-			_gp_gen = "!!!_WEST_PASSAGE__LEVEL_-1_!!!";
+			_gp_gen = "!_WEST_PASSAGE__LEVEL_-1_!";
 			break;
 		case 6:
-			_gp_gen = "!!_ACCESS_TO_WEST_PASSAGES_!!!";
+			_gp_gen = "ACCESS_TO_WEST_PASSAGES_!!";
 			break;
 		case 7:
-			_gp_gen = "!!!_CENTRAL_HALL__LEVEL_-1_!!!";
+			_gp_gen = "!_CENTRAL_HALL__LEVEL_-1_!";
 			break;
 		case 8:
-			_gp_gen = "!!!!!_ACCESS_TO_DUNGEONS_!!!!!";
+			_gp_gen = "!!!_ACCESS_TO_DUNGEONS_!!!";
 			break;
 		case 9:
-			_gp_gen = "!!!!!!!!!!_DUNGEONS_!!!!!!!!!!";
+			_gp_gen = "!!!!!!!!_DUNGEONS_!!!!!!!!";
 			break;
 		case 10:
-			_gp_gen = "!!!_WEST_PASSAGE__LEVEL_-2_!!!";
+			_gp_gen = "!_WEST_PASSAGE__LEVEL_-2_!";
 			break;
 		case 11:
-			_gp_gen = "!!!!!!!_SUPPLY_DEPOT_2_!!!!!!!";
+			_gp_gen = "!!!!!_SUPPLY_DEPOT_2_!!!!!";
 			break;
 		case 12:
-			_gp_gen = "!!!_CENTRAL_HALL__LEVEL_-2_!!!";
+			_gp_gen = "!_CENTRAL_HALL__LEVEL_-2_!";
 			break;
 		case 13:
-			_gp_gen = "!!_ACCESS_TO_SOUTHEAST_EXIT_!!";
+			_gp_gen = "ACCESS_TO_SOUTHEAST_EXIT_!";
 			break;
 		case 14:
-			_gp_gen = "!!!!_EXIT_TO_UNDERGROUND_!!!!!";
+			_gp_gen = "!!_EXIT_TO_UNDERGROUND_!!!";
 			break;
 		case 15:
-			_gp_gen = "!!!!!!!_PELUSOIDS_LAIR_!!!!!!!";
+			_gp_gen = "!!!!!_PELUSOIDS_LAIR_!!!!!";
 			break;
 		case 16:
 		case 17:
-			_gp_gen = "!!!!!!_ALVARITOS_GROTTO_!!!!!!";
+			_gp_gen = "!!!!_ALVARITOS_GROTTO_!!!!";
 			break;	
 		case 18:
-			_gp_gen = "!!!_TOXIC_WASTE_STORAGE_2A_!!!";
+			_gp_gen = "!_TOXIC_WASTE_STORAGE_2A_!";
 			break;
 		case 19:
-			_gp_gen = "!!!!!_UNDERGROUND_TUNNEL_!!!!!";
+			_gp_gen = "!!!_UNDERGROUND_TUNNEL_!!!";
 			break;
 		case 20:
-			_gp_gen = "!!!!!_SIDE_HALL_LEVEL_-4_!!!!!";
+			_gp_gen = "!!!_SIDE_HALL_LEVEL_-4_!!!";
 			break;
 		case 21:
-			_gp_gen = "!!!!!_ARACHNOVIRUS_LAIR_!!!!!!";
+			_gp_gen = "!!!_ARACHNOVIRUS_LAIR_!!!!";
 			break;
 		case 22:
 		case 23:
-			_gp_gen = "!!!!!_UNSTABLE_CORRIDORS_!!!!!";
+			_gp_gen = "!!!_UNSTABLE_CORRIDORS_!!!";
 			break;
 		case 24:
-			_gp_gen = "!!!_TOXIC_WASTE_STORAGE_2B_!!!";
+			_gp_gen = "!_TOXIC_WASTE_STORAGE_2B_!";
 			break;
 		case 25:
-			_gp_gen = "!!!!!_SIDE_HALL_LEVEL_-5_!!!!!";
+			_gp_gen = "!!!_SIDE_HALL_LEVEL_-5_!!!";
 			break;
 		case 26:
 		case 27:
 		case 28:
-			_gp_gen = "!!!!!!!_ABANDONED_MINE_!!!!!!!";
+			_gp_gen = "!!!!!_ABANDONED_MINE_!!!!!";
 			break;
 		case 29:
 			if (flags[2] == 0)
-				_gp_gen = "!!!!_EXPLOSIVES_STOCKPILE_!!!!";
+				_gp_gen = "!!_EXPLOSIVES_STOCKPILE_!!";
 			else
-				_gp_gen = "!!!_BACK_TO_CONTROL_CENTER_!!!";
+				_gp_gen = "!_BACK_TO_CONTROL_CENTRE_!";
 			break;
 #else
 		case 0:
-			_gp_gen = "!!!!!_CENTRO_DE_CONTROL_!!!!!!";
+			_gp_gen = "!!!_CENTRO_DE_CONTROL_!!!! /";
 			break;
 		case 1:
-			_gp_gen = "!!_ALMACEN_DE_MERCANCIAS_1A_!!";
+			_gp_gen = "ALMACEN_DE_MERCANCIAS_1A_!";
 			break;
 		case 2:
-			_gp_gen = "!!_PASILLO_CENTRAL__NIVEL_0_!!";
+			_gp_gen = "PASILLO_CENTRAL_NIVEL_0_!!";
 			break;
 		case 3:
-			_gp_gen = "!!!_ALMACEN_DE_RESIDUOS_1A_!!!";
+			_gp_gen = "!_ALMACEN_DE_RESIDUOS_1A_!";
 			break;
 		case 4:
-			_gp_gen = "!!!_ALMACEN_DE_RESIDUOS_1B_!!!";
+			_gp_gen = "!_ALMACEN_DE_RESIDUOS_1B_!";
 			break;
 		case 5:
-			_gp_gen = "_PASADIZOS_DEL_OESTE_NIVEL_-1_";
+			_gp_gen = "PASADIZOS_OESTE_NIVEL -1_!";
 			break;
 		case 6:
-			_gp_gen = "!!!!!_ACCESO_A_PASADIZOS_!!!!!";
+			_gp_gen = "!!!_ACCESO_A_PASADIZOS_!!!";
 			break;
 		case 7:
-			_gp_gen = "!!_PASILLO_CENTRAL_NIVEL_-1_!!";
+			_gp_gen = "PASILLO_CENTRAL_NIVEL_-1_!";
 			break;
 		case 8:
-			_gp_gen = "!!!!!_ACCESO_A_MAZMORRAS_!!!!!";
+			_gp_gen = "!!!_ACCESO_A_MAZMORRAS_!!!";
 			break;
 		case 9:
-			_gp_gen = "!!!!!!!!!_MAZMORRAS_!!!!!!!!!!";
+			_gp_gen = "!!!!!!!_MAZMORRAS_!!!!!!!!";
 			break;
 		case 10:
-			_gp_gen = "_PASADIZOS_DEL_OESTE_NIVEL_-2_";
+			_gp_gen = "PASADIZOS_OESTE_NIVEL_-2_!";
 			break;
 		case 11:
-			_gp_gen = "!!_ALMACEN_DE_MERCANCIAS_1B_!!";
+			_gp_gen = "ALMACEN_DE_MERCANCIAS_1B_!";
 			break;
 		case 12:
-			_gp_gen = "!!_PASILLO_CENTRAL_NIVEL_-2_!!";
+			_gp_gen = "PASILLO_CENTRAL_NIVEL_-2_!";
 			break;
 		case 13:
-			_gp_gen = "!!_ACCESO_A_SALIDA_SUR-ESTE_!!";
+			_gp_gen = "ACCESO_A_SALIDA_SUR-ESTE_!";
 			break;
 		case 14:
-			_gp_gen = "!!!!!_SALIDA_AL_SUBSUELO_!!!!!";
+			_gp_gen = "!!!_SALIDA_AL_SUBSUELO_!!!";
 			break;
 		case 15:
-			_gp_gen = "!!!!_MADRIGUERA_PELUSOIDE_!!!!";
+			_gp_gen = "!!_MADRIGUERA_PELUSOIDE_!!";
 			break;
 		case 16:
 		case 17:
-			_gp_gen = "!!!!!_GRUTA_DE_ALVARITO_!!!!!!";
+			_gp_gen = "!!!_GRUTA_DE_ALVARITO_!!!!";
 			break;	
 		case 18:
-			_gp_gen = "!!!_ALMACEN_DE_RESIDUOS_2A_!!!";
+			_gp_gen = "!_ALMACEN_DE_RESIDUOS_2A_!";
 			break;
 		case 19:
-			_gp_gen = "!!!!!_TUNEL_SUBTERRANEO_!!!!!!";
+			_gp_gen = "!!!_TUNEL_SUBTERRANEO_!!!!";
 			break;
 		case 20:
-			_gp_gen = "!!_PASILLO_LATERAL_NIVEL_-4_!!";
+			_gp_gen = "PASILLO_LATERAL_NIVEL_-4_!";
 			break;
 		case 21:
-			_gp_gen = "!!!_MADRIGUERA_ARACNOVIRUS_!!!";
+			_gp_gen = "!_MADRIGUERA_ARACNOVIRUS_!";
 			break;
 		case 22:
-			_gp_gen = "!!!!_PASILLOS_INESTABLES_!!!!!";
-			break;
 		case 23:
-			_gp_gen = "!!!!_PASILLOS_INESTABLES_!!!!!";
+			_gp_gen = "!!_PASILLOS_INESTABLES_!!!";
 			break;
 		case 24:
-			_gp_gen = "!!!_ALMACEN_DE_RESIDUOS_2B_!!!";
+			_gp_gen = "!_ALMACEN_DE_RESIDUOS_2B_!";
 			break;
 		case 25:
-			_gp_gen = "!!_PASILLO_LATERAL_NIVEL_-5_!!";
+			_gp_gen = "PASILLO_LATERAL_NIVEL_-5_!";
 			break;
 		case 26:
 		case 27:
 		case 28:
-			_gp_gen = "!!!!!!_MINA_ABANDONADA_!!!!!!!";
+			_gp_gen = "!!!!_MINA_ABANDONADA_!!!!!";
 			break;
 		case 29:
 			if (flags[2] == 0)
-				_gp_gen = "!!!_DEPOSITO_DE_EXPLOSIVOS_!!!";
+				_gp_gen = "!_DEPOSITO_DE_EXPLOSIVOS_!";
 			else
-				_gp_gen = "_REGRESA_AL_CENTRO_DE_CONTROL_";
+				_gp_gen = "!!_REGRESA_AL_DETONADOR_!!";
 			break;
 #endif		
 	}
-	print_str ();
+	print_str();
 	
+	_x = 29;
+	_t = game_percent;
+	print_number2();
+
 	// custom salva. Adaptative palettes
 	switch(n_pant)
 	{

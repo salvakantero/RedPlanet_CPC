@@ -326,3 +326,11 @@ unsigned char isr_player_on;
 unsigned char last_pal = 1;
 unsigned char muted = 0;
 unsigned char breath_ct = 0, sp_printed;
+
+unsigned char game_percent = 0;
+// ============================
+// Dynamite * 10	+4
+// Keys * 5			+5
+// Doors * 5		+5
+// Locate dyn		+5
+// Detonator		+5

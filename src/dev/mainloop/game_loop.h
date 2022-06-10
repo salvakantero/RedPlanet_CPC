@@ -249,6 +249,10 @@
 				{
 					// Any scripts to run in this screen?
 					run_fire_script ();
+					
+					// custom salva (explosives deposited? +5)
+					if (flags[2] == 1 && game_percent < 95)
+						game_percent += 5;
 				}
 			#endif
 		#endif
