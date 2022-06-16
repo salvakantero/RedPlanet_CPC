@@ -102,6 +102,22 @@ del %game%.cdt > nul
 ..\utils\cpc2cdt.exe -r SCR -m raw1full -rl 740 -p 2000 ..\bin\loading.c.bin %game%.cdt
 ..\utils\cpc2cdt.exe -r MAIN -m raw1full -rl 740 -p 2000 ..\bin\%game%.c.bin %game%.cdt
 
+REM echo Construyendo disco
+REM copy ..\bin\%game%.c.bin game.bin > nul 
+REM copy ..\bin\base.dsk %game%.dsk > nul 
+REM copy ..\bin\loading.c.bin loading.bin > nul
+REM echo compilando cargador de disco
+REM ..\utils\pasmo.exe loader\loader_disco.asm disc.bin
+REM echo agregando archivos al disco
+REM ..\utils\CPCDiskXP\CPCDiskXP.exe -File disc.bin 00ff -AddToNewDsk %game%.dsk
+REM ..\utils\CPCDiskXP\CPCDiskXP.exe -File loading.bin -AddAmsDosHeader C000 -AddToExistingDsk %game%.dsk
+REM ..\utils\CPCDiskXP\CPCDiskXP.exe -File game.bin -AddAmsDosHeader 0400 -AddToExistingDsk %game%.dsk
+REM **** RECORDATORIO COMO HACER UN DSK ****
+REM HICIMOS EL DSK CON LA HERRAMIENTA MANAGE DSK Y CON EL CARGADOR DE JGN EN ASM. 
+REM SE CARGA EL DSK CON LOS BINARIOS EN LA UNIDAD A DE DISCO EN WINAPE.
+REM SE CARGA EL CARGADOR ASM EN WINAPE: SE LE DA A F3, FILE->OPEN. 
+REM LUEGO F9 PARA EJECUTARLO. ÉL SOLO ESCRIBE EL FICHERO DISC.BIN EN EL DSK QUE HAY CARGADO EN WINAPE.
+
 goto :end 
 
 :help
