@@ -57,7 +57,7 @@ void hotspots_do (void) {
 			#ifndef DEACTIVATE_KEYS
 				case 2:
 					p_keys ++;
-					game_percent += 5; // custom salva		
+					game_percent += 4; // custom salva		
 					AY_PLAY_SOUND (SFX_KEY_GET);
 					break;
 			#endif
