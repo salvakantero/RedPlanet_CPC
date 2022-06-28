@@ -115,7 +115,7 @@ void espera_activa (int espera) {
 				}
 				_x = x0; _y = y0; _t = 0; _n = 0; update_tile ();
 				-- p_keys;
-				game_percent += 5; // custom salva		
+				game_percent += 4; // custom salva		
 				AY_PLAY_SOUND (SFX_OPEN_LOCK);
 				
 				#include "my/ci/on_unlocked_bolt.h"

@@ -330,7 +330,7 @@ unsigned char breath_ct = 0, sp_printed;
 unsigned char game_percent = 0;
 // ============================
 // Dynamite * 10	+4
-// Keys * 5			+5
-// Doors * 5		+5
-// Locate dyn		+5
-// Detonator		+5
+// Keys * 6			+4
+// Doors * 6		+4
+// Locate dyn		+8
+// Detonator		+4
