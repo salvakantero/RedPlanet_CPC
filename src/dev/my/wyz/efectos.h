@@ -23,17 +23,10 @@
 		defb 0xA6, 0x0F, 0x00
 		defb 0xFF
 
-	// SFX_SHOOT
-	.EFECTO4
-		defb 0x00, 0x0C, 0x00
-		defb 0x10, 0x0C, 0x00
-		defb 0x20, 0x0C, 0x01
-		defb 0x30, 0x0C, 0x01
-		defb 0x40, 0x0C, 0x02
-		defb 0x50, 0x0C, 0x02
-		defb 0x60, 0x0C, 0x03
-		//DB $B8, $BF, $AF
-		DB $FF
+	// SFX_SHOOT  - USAR ESTE POR FAVOR, funciona y el que estaba se roba demasiado tiempo de los DRUMS. Gracias querido!!!
+	.EFECTO4 
+		DB	183,143,31,2,15,31,22,11,2,52,13,6,71,14,9,100,14,13,153,13,15,192,11,19,233,8,21,109,22,26,171,36,31,255
+
 
 	; 5 Coger objeto
 	;10 Coger una llave 
@@ -71,44 +64,25 @@
 				defb 0xFF
 
 
-	// SFX_KILL_ENEMY_STEP / SFX_KILL_ENEMY_SHOOT
+	// SFX_KILL_ENEMY_STEP / SFX_KILL_ENEMY_SHOOT ?
 	.EFECTO6 
 		DB $00, $FF, $1F
 		DB $FF
 
-	// SFX_HIT_ENEMY
+	// SFX_HIT_ENEMY 
 	.EFECTO7 
-		DB $B8, $1B, $1F
-		DB $B8, $1B, $1F
-		DB $B8, $0F, $1F
-		DB $B8, $0F, $1F
-		DB $B8, $0E, $1F
-		DB $08, $0E, $1F
-		DB $08, $0D, $1F
-		DB $08, $0D, $1F
-		DB $08, $0C, $1F
-		DB $FF
+		DB	181,15,0,211,10,0,248,15,0,91,31,0,159,31,0,224,30,0,205,45,0,222,60,0,207,74,0,234,90,0,255,108,0,255,138,0,255
 
-	// SFX_JUMP
+	// SFX_JUMP - USAR ESTE POR FAVOR, la mezcla de volumen y la entonación es correcta para este sfx
 	.EFECTO12 
-		defb 0xAF, 0x0C, 0x00
-		defb 0x8A, 0x0C, 0x00
-		defb 0x71, 0x0C, 0x00
-		defb 0x64, 0x0C, 0x00
-		defb 0xFF	
+		DB	137,27,0,103,26,0,78,25,0,50,24,0,30,23,0,15,22,0,0,21,0,255
 
-	// SFX_SPIKES
+	// SFX_SPIKES  - el mismo que el de abajo
 	.EFECTO13 
-		DB $FE, $FF
-		DB $22, $EF
-		DB $01, $DF
-		DB $1F, $CF
-		DB $6F, $BF
-		DB $FF 
+		DB	113,15,0,118,15,0,122,15,0,129,15,0,53,30,0,5,30,0,205,14,0,54,30,0,21,30,0,37,30,0,7,28,0,0,26,0,255
 
-	// SFX_ENEMY_HIT
+	// SFX_ENEMY_HIT - Funciona bien
 	.EFECTO14 
-		DB $F0, $FF, $1F
-		DB $FF
+		DB	113,15,0,118,15,0,122,15,0,129,15,0,53,30,0,5,30,0,205,14,0,54,30,0,21,30,0,37,30,0,7,28,0,0,26,0,255
 #endasm
 

@@ -8,7 +8,7 @@
      
     ; Tabla de instrumentos 
     .TABLA_PAUTAS
-        defw PAUTA_0,PAUTA_1,PAUTA_2,PAUTA_3,PAUTA_4,PAUTA_5,PAUTA_6,PAUTA_7,PAUTA_8,PAUTA_9,PAUTA_10,PAUTA_11,PAUTA_12,PAUTA_13,PAUTA_14,PAUTA_15,PAUTA_16 
+        defw PAUTA_0,PAUTA_1,PAUTA_2,PAUTA_3,PAUTA_4,PAUTA_5,PAUTA_6,PAUTA_7,PAUTA_8,PAUTA_9,PAUTA_10,PAUTA_11,PAUTA_12,PAUTA_13,PAUTA_14,PAUTA_15,PAUTA_16,PAUTA_17 
      
     ; Tabla de efectos 
     .TABLA_SONIDOS
@@ -19,10 +19,10 @@
     .PAUTA_0
         defb 73,0,41,0,8,0,7,0,6,0,6,0,6,0,6,0,6,0,6,0,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,138 
     ;Instrumento 'FX1' 
-    .PAUTA_2
+    .PAUTA_1
         defb 39,0,7,0,129 
     ;Instrumento 'FX2' 
-    .PAUTA_1
+    .PAUTA_2
         defb 39,6,7,0,129 
     ;Instrumento 'FX3' 
     .PAUTA_3
@@ -38,16 +38,16 @@
         defb 72,-18,8,6,7,6,7,6,6,0,6,0,6,0,6,-1,6,-1,6,0,6,0,6,0,6,1,6,1,6,0,6,0,6,0,138 
     ;Instrumento 'Nuevo' 
     .PAUTA_7
-        defb 72,0,40,0,71,0,39,0,70,0,38,0,0,129 
+        defb 72,0,40,0,71,0,39,0,70,0,38,0,65,0,33,0,65,0,33,0,65,0,33,0,0,129 
     ;Instrumento 'SYNTH2' 
     .PAUTA_8
         defb 74,0,42,0,69,0,37,0,70,0,38,0,68,9,36,0,130 
     ;Instrumento 'SYNTH3' 
     .PAUTA_9
-        defb 73,0,41,0,71,0,39,0,0,129 
+        defb 73,0,41,0,71,0,39,0,65,0,33,0,65,0,33,0,0,129 
     ;Instrumento 'SYNTH4' 
     .PAUTA_10
-        defb 72,0,40,0,0,0,0,129 
+        defb 70,0,38,0,66,0,34,0,65,0,33,0,65,0,33,0,0,129 
     ;Instrumento 'BASS2' 
     .PAUTA_11
         defb 73,0,41,0,8,0,7,0,6,0,6,0,6,0,6,0,6,0,4,0,129 
@@ -66,6 +66,9 @@
     ;Instrumento 'Nuevo' 
     .PAUTA_16
         defb 8,0,8,0,8,0,8,0,8,0,0,129 
+    ;Instrumento 'SYNTH4_2' 
+    .PAUTA_17
+        defb 70,0,38,0,66,0,34,0,67,0,35,0,66,9,34,0,130 
      
     ;Efectos 
     ;Efecto 'KICK' 
