@@ -7,7 +7,7 @@
 // I. General configuration
 // ============================================================================
 
-//#define ENGLISH_LANG						// Otherwise spanish
+#define ENGLISH_LANG						// Otherwise spanish
 
 //#define SOUND_NONE
 #define SOUND_WYZ

@@ -61,9 +61,9 @@ ESC:    Cancel game.
 
 RED PLANET - Amstrad CPC
 ========================
-salvaKantero:   Program, GFX, SFX
-tacha:          Music
+salvaKantero:   Program / Graphics
+tacha:          Music / Sound effects
 masterklown:    Cover illustration
 blackmores:     Betatesting
 
-A very special thanks to the "Mojon Twins" for refining and sharing their MK1 game engine.
+A very special thanks to the "Mojon Twins" for refining and sharing their MK1 game engine for CPC.
