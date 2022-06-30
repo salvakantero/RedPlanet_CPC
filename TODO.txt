@@ -43,8 +43,9 @@ HECHO
 04/06/22 - pantalla de ending MK (textos)
 04/06/22 - música intro
 04/06/22 - imagen promo con portada de MK
+29/06/22 - testing final
+
 
 POR HACER
 =========
-- testing final
-- generar formato DSK
+
