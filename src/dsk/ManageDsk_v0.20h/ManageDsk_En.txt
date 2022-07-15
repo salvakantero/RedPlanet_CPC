@@ -1,0 +1,329 @@
+ManageDsk
+---------
+
+DSK file manager.
+Allows to manipulate DSK files like virtual disks.
+
+Usage is quite simple:
+3 buttons at the bottom of the interface allow respectively
+- Click on "Create DSK": Create a virtual disk format blank DATA
+- Click on "Read DSK": Load a DSK as a virtual floppy
+- Button "Save DSK": Saving the virtual floppy to DSK file format.
+
+The central window shows a summary of the files on the virtual disk, with:
+- The name of the file,
+- The user number,
+- The write protection attribute,
+- File hidden attribute,
+- The type of the file,
+- The size of the file.
+For more information about a file, simply do a
+"Right click on it." A pop-up appears with the information
+on the selected file. From this popup, it is possible to change
+directly certain parameters of the file as:
+Its starting address,
+Its point of entry,
+Its attributes (read-only and hidden file).
+
+The buttons below the window allow the manipulation of files:
+- Click on "Add file (s)": Enables the addition of 1 or more files
+virtual floppy. Selecting multiple files is done using
+of the standard Windows interface (CTRL key held down).
+- Button "Export File (s)" Retrieves the virtual floppy
+One or more files. Just select the window or
+export files (by holding down the CTRL key in the case of
+multiple files) and click on the button. We can rename each
+files before export.
+- Button "Rename File (s)": Rename one or more files
+virtual floppy. Just select the window or
+export files (by holding down the CTRL key in the case of
+multiple files) and click on the button. We can then edit
+the file name and the number of User.
+- "Delete File (s)": Delete a file or files
+the virtual disk. Just select the window or
+export files (by holding down the CTRL key in the case of
+multiple files) and click on the button. Confirmation of
+suppression will be required for each file.
+
+The check box "automatic cleaning of headers AMSDOS format" allows
+to clear (fill with zeros) the unused bytes in the header AMSDOS
+basic or BINARY files. This option lets you save space in
+compression of a file in ZIP format DSK example.
+This works both ways: import files into
+Virtual Floppy and for export to the PC hard drive.
+
+Command line
+-----------------
+
+Since version 0.8, ManageDsk can be used from the command line,
+or from a batch file (. BAT or. CMD) when it is launched with one or
+several arguments, it does not open the interface, but performs the functions
+that are specified on the command line.
+The parameters accepted by the command line are:
+-Ldskname: read a DSK file.
+-C: Create a blank DSK
+-Afilemasks: add one or more files to. DSK.
+The files are added as is, without creation / modification of the header
+AMSDOS possible they may contain.
+-Sdskname: saves the dsk under a particular name
+-Ifullpathname/fichierCPC/type/debut/execution: Add a file
+specifying the information to be written in the header AMSDOS: file type,
+start address and port of entry (execution address).
+Examples:-IC:\MYFILE/TOTO.BIN/BIN/16384/16384
+                -I"D:\documents and settings\foo\my ecran.src"/ECRAN.SCR/BIN/49152
+                -IC:\testbasic/PROG.BAS/BAS/368
+                -IC:\file/test/ASCII
+For ascii files, no need to specify starting address and execution.
+
+
+The arguments can be followed on the command line, and must be
+separated by spaces.
+
+A typical example of creating a dsk, adding binary files, then
+save this dsk as the toto.dsk:
+
+ManageDsk -C -A*.BIN -Stoto.dsk
+
+Another example: Reading a dsk, adding .BAS and .BIN files and saving :
+
+ManageDsk -LOld.dsk -A*.BAS -A*.BIN -SNew.dsk
+
+Note:
+- Each command (argument) starts with the character '-' (minus character)
+- The command options (file name) must be joined to the
+control (no spaces)
+- Orders can be entered in uppercase or lowercase.
+- For the moment, five commands are known:
+    -L: Read DSK
+    -C: Create DSK
+    -A: Adding files to DSK
+    -S: Save DSK
+    -I: Adding a file with optionally specifying the parameters of the AMSDOS header
+
+Read/write directly on 3.5-inch disk
+------------------------------------
+Since version 0.15, ManageDsk can read/write directly to 3.5-inch floppy disks.
+This allows for example:
+- Read a 3.5-inch disk and create the corresponding DSK,
+- Dsk read a file and write it to 3.5-inch disk in order to use the 3.5-inch
+disk of CPC
+This is possible by using the driver fdrawcmd.sys Simon Owen.
+It is therefore necessary to install this driver to use these
+new features read/write direct.
+fdrawcmd.sys is not delivered in the archive, but is free disponnible
+at the following address: http://simonowen.com/fdrawcmd
+
+
+Management versions
+-------------------
+
+Version 0.6 (25/02/2005)
+------------------------
+Corrections:
+- Ability to minimize the interface
+- Import ASCII: ASCII when forced, remove the header if it exists AMSDOS
+- Importing an ASCII file mode 'user choice', if passage
+binary addition of the header AMSDOS
+- Added button "save as" and change the button "save dsk" which
+directly saves the existing file by overwriting.
+
+Version 0.7 (26/02/2005)
+------------------------
+Corrections:
+- Problem with backup of the table directories on disk with
+sectors interleaved set.
+
+Version 0.8 (02/03/2005)
+------------------------
+- Ability to change the attributes "Read Only" and "Hidden" from each
+files on a. DSK
+- Management of the command line (useful for batch files)
+
+
+Version 0.9 (07/03/2005)
+------------------------
+- Fixed bugg when displaying information on an ASCII file
+- Added "double click" on a file that has the same functionality as
+the "right click"
+- Ability to change the type of file
+- Viewer sectors
+
+Version 0.10 (03/13/2005)
+-------------------------
+- Separation of the modes of import and export
+- Prevents a file to consider starting with 128 bytes to zero as having
+a header AMSDOS (little bugg ...)
+
+Version 0.11 (29/03/2005)
+-------------------------
+- Added a file viewer or hex basic mode if the file is
+detected as such, and video memory screen mode cpc.
+- Fixed a small bugg when creating the header for AMSDOS
+files with numbers in the name.
+
+Version 0.12 (04/04/2005)
+-------------------------
+- Ability to change the height / width of the display in the viewer
+File mode video memory screen cpc (mode "flat")
+- Ability to save the screen display mode in the video memory
+cpc (mode "flat")
+- Fixed a small bugg when importing a file containing
+header AMSDOS which you want to change the settings (start / entry point)
+
+Version 0.12b (05/04/2005)
+--------------------------
+- Removed a small bugg in the viewer of files: the header AMSDOS
+was included in the visualization
+
+Version 0.12c (15/04/2005)
+-------------------------
+- Force the number of tracks to 40 if it is greater than 40 when
+reading a file. DSK
+
+Version 0.13 (14/11/2005)
+-------------------------
+- Taking into account the special format of PCW (9 sectors 1 to 9).
+- Prohibition of multiple copies of the same file on a floppy disk.
+- Fixed bugg backup image files format EXTDSK.
+
+Version 0.14 (19/11/2005)
+-------------------------
+- Visualization possible format file format Dams or disassembled.
+
+Version 0.14b (02/12/2005)
+-------------------------
+- Allow to create disks more than 42 tracks (use blocks
+AMSDOS up to 255 instead of 188).
+- Added confirmation read and output when the last disk
+change has not been saved.
+
+Version 0.14c (04/01/2006)
+--------------------------
+- Added filename in the display window.
+- Fixed a small bugg display the length of a file on a
+right click.
+- Fixed bugg display in the disassembler.
+- Fixed bugg display floating point values ??in the basic viewer.
+
+Version 0.14d (not releasée)
+----------------------------
+- Fixed bugg in déssassembleur (instructions # DD / # FD # CB ...).
+- Fixed bugg display in the viewer in "listing".
+
+Version 0.15 (15/08/2006)
+-------------------------
+- Fixed some texts in French remained in the interface.
+- Added character '_' after a label "reserved" (READ, WRITE, END) mode
+"Dams".
+- Simultaneous handling of two DSK files.
+- Ability to change the height / width display screen in "standard".
+- Ability to change the palette display screen.
+- Options to read / write directly to a 3.5-inch disk
+
+Version 0.15b (21/08/2006)
+--------------------------
+- Fixed bug "cancel" button in the direct writing to A:
+- Fixed bugs listings viewer files BASIC / ASCII
+- Automatic conversion of accented characters CPC to PC (Chart mode)
+- Export possible listings in text mode
+- Striping files. DSK non-interlaced on request.
+- Display of file. WIN OCP
+- Automatic reading of the file. PAL corresponding to a file. SCR or a
+file. visu WIN mode "screen".
+- Automatic display files BASIC. Or WIN. SCR
+
+Version 0.15c (15/09/2006)
+--------------------------
+- Fixed bug run "xxx in the basic viewer.
+- Fixed a bug that would crash the viewer mode Dams (exceeding the
+number of characters in a label)
+- Fixed a bug in the areas of reading size! = 2
+- Display basic listings in protected (unencrypted)
+- Passage of the screen size limit of 80 columns to 128 columns (in
+viewer mode video memory cpc).
+
+Version 0.16 (12/24/2006)
+--------------------------
+- Fix for access drives 5 "1 / 4 (problem of signal READY)
+- Fixed bug when writing sectors of size! = 2
+- Ability to view the files on DSK no "standard"
+- Ability to view files larger than 64KB
+- Ability to save a file in a text file via DAMS
+the viewer of files.
+
+Version 0.17 (06/05/2010)
+------------------------
+- Fixed bug when formatting a DSK
+- Fixed bug on non-standard file names
+
+Version 0.18 (07/28/2010)
+-------------------------
+- Added the-I command line
+- Added "Compare" button that allows the comparison of two or DSKs
+files on two DSKs
+
+Version 0.19 (12/24/2010)
+-------------------------
+- Location of the program in Spanish
+- Fixed bug with changing the number to use a file
+- Fixed display bug (update list file) of the function
+"Show directory
+
+Version 0.19b (01/18/2011)
+--------------------------
+- Fixed bug in length when exporting files without headers
+
+
+Version 0.20 (08/31/2011)
+-------------------------
+- Fixed a bug when exporting files without headers
+- Fixed minor text localized (Fr / En / Sp) of the application
+- Added "drag'n'drop" files and. DSK
+- Added start address in the display "déssassemblée"
+
+Version 0.20b (08/19/2011)
+--------------------------
+- Fixed bug in management numbers of users files.
+
+Version 0.20c (09/27/2011)
+--------------------------
+- Fixed bug in rename files.
+- Show deleted files in red (USER 229).
+- Can permanently delete files.
+
+Version 0.20d (09/29/2011)
+--------------------------
+- Fixed bug in delete files.
+
+Version 0.20e (11/18/2011)
+--------------------------
+- Fixed bug in formating the dsk in the second window
+- Fixed bug in viewing protected basic files
+
+Version 0.20f (11/24/2011)
+--------------------------
+- Fixed bug when using special characters in file names (#$%&...)
+- Fixed bug when copying/displaying files (problem on file size)
+
+Version 0.20g (01/25/2012)
+--------------------------
+- Fixed bug when permanently delete files
+
+Version 0.20h (02/06/2012)
+--------------------------
+- Fixed bug when renaming files
+
+
+Thanks to Ramlaid for his permission to use the code
+DamsConverter, and Targhan, Longshot and Kukulcan for their many buggs-report,
+Simon Owen for his fdrawcmd.sys at Lex Sparrow for his translation into Spanish,
+and to all users!
+
+
+For additional information, report or other buggs send
+me a message at the following address:
+
+ludovic.deplanque (at) libertysurf (dot) fr
+
+or go visit my web page: http://demoniak-contrib.forumactif.com
+
