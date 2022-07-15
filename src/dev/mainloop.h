@@ -172,6 +172,7 @@ void main (void) {
 
 		level = 0;
 		muted = 0; //custom salva
+		game_percent = 0;
 
 		// Here the title screen		
 		title_screen ();
