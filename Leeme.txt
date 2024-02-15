@@ -61,9 +61,9 @@ tacha:          Música / Efectos de sonido
 masterklown:    Ilustración de portada
 blackmores:     Betatesting
 
-Un agradecimiento muy especial a los "Mojon Twins" por perfeccionar y compartir su motor de juegos MK1 para CPC.
-
 RED PLANET está publicado bajo licencia GPL v2 para todos los componentes de software* (ver license.txt).
 * Sin embargo, tenga en cuenta que las ilustraciones utilizadas para la portada NO están publicadas bajo la licencia GPL v2.
 Estas ilustraciones son propiedad intelectual de Masterklown y están sujetas a condiciones de licencia independientes. 
 Cualquier uso, reproducción o distribución de las ilustraciones debe ser autorizado por Masterklown. 
+
+Un agradecimiento muy especial a los "Mojon Twins" por perfeccionar y compartir su motor de juegos MK1 para CPC.
