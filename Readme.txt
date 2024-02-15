@@ -66,9 +66,9 @@ tacha:          Music / Sound effects
 masterklown:    Cover illustration
 blackmores:     Betatesting
 
-A very special thanks to the "Mojon Twins" for refining and sharing their MK1 game engine for CPC.
-
 RED PLANET is released under GPL v2 for all software components* (see license.txt).
 * However, please note that the illustrations used for the cover artwork are NOT released under the GPL v2 license. 
 These illustrations are the intellectual property of Masterklown and are subject to separate licensing terms. 
 Any use, reproduction, or distribution of the illustrations must be authorized by Masterklown. 
+
+A very special thanks to the "Mojon Twins" for refining and sharing their MK1 game engine for CPC.
